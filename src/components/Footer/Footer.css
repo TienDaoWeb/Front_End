@@ -1,0 +1,25 @@
+.Footer__wrapper {
+  @apply w-full bg-[color:var(--background-color-1)] select-none px-[100px] py-0;
+}
+.Footer {
+  @apply flex h-[100px] w-full items-center justify-between;
+}
+.Footer__logo {
+  @apply h-[75px] object-contain;
+}
+.Footer__nav {
+  @apply flex gap-5;
+}
+.Footer__nav--item {
+  @apply text-[1.4rem] text-[color:var(--black)] font-normal;
+}
+.Footer__link {
+  @apply flex gap-2.5;
+}
+.Footer__link--btn {
+  @apply text-[1.4rem] bg-transparent w-10 h-10 border-[none];
+}
+.Footer__nav--item:hover,
+.Footer__link--btn:hover {
+  @apply text-[color:var(--gold)] border-[none];
+}

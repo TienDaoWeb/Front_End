@@ -1,0 +1,55 @@
+.Header__wrapper {
+  @apply w-full h-[70px];
+}
+.Header {
+  @apply w-full h-full flex items-center justify-between text-[1.6rem] bg-[color:var(--background-color-1)] select-none flex-nowrap px-[100px] py-0;
+}
+.Header__left {
+  @apply flex items-center gap-5;
+}
+.Header__name {
+  @apply flex items-center gap-[10px] w-fit;
+}
+.Header__website-name {
+  @apply text-[2rem] font-normal not-italic;
+  font-family: "UTM ThuPhap Thien An", serif;
+}
+.Header__logo {
+  @apply bg-[url('/assets/Logo.png')] bg-contain bg-[center_center] w-[50px] h-[50px];
+}
+.Header__name:hover .Header__logo {
+  @apply bg-[url('/assets/Logo\_gold.png')] bg-contain bg-[center_center] w-[50px] h-[50px];
+}
+.Header__Type {
+  @apply flex gap-[10px] items-center font-[600] text-[1.6rem] w-fit;
+}
+.Header_rank {
+  @apply font-[600] text-[1.6rem] w-fit;
+}
+.Header__search {
+  @apply flex relative h-[40px];
+}
+.Header__search--input {
+  @apply flex-1 border-[color:var(--black)] text-[1.6rem] p-2.5 rounded-[10px] border-[solid] border-none;
+}
+.Header__search--icon {
+  @apply absolute -translate-y-2/4 right-2.5 top-2/4;
+}
+.Header__action {
+  @apply flex gap-[10px];
+}
+.Header__action--btn-up {
+  @apply bg-transparent w-[120px] flex gap-[10px] items-center font-medium text-[1.6rem] text-center leading-[30px] p-2.5 border-none;
+}
+.Header__action--btn-login,
+.Header__action--btn-sign-up {
+  @apply bg-transparent flex items-center border-none w-[80px];
+}
+.Header__name:hover,
+.Header__Type:hover,
+.Header_rank:hover,
+.Header__action--btn-up:hover,
+.Header__action--btn-login:hover,
+.Header__action--btn-sign-up:hover {
+  @apply text-[color:var(--gold)] cursor-pointer border-none;
+}
