@@ -1,0 +1,139 @@
+.Story_detail__wrapper{
+  @apply w-full flex flex-col relative w-screen clear-both select-none;
+}
+
+.Story_detail{
+  @apply flex flex-col w-full mt-5 mb-10 px-[100px] py-0 gap-10;
+}
+
+.Story_detail__generic{
+  @apply flex gap-10 px-[2rem] mb-[2rem];
+}
+
+.Story_detail__banner--wrapper{
+  @apply flex justify-center items-center w-[20rem];
+}
+
+.Story_detail__banner{
+  @apply h-[24rem] object-contain drop-shadow-2xl;
+}
+
+.Story_detail__generic_information{
+  @apply flex flex-col;
+}
+
+.Story__title{
+  font-family: "DFVN Bridge Type", serif;
+  @apply font-bold text-[1.6rem] pb-5;
+}
+
+.Story__author{
+  @apply text-[1.4rem] pb-[2.5rem];
+}
+
+.Story__action{
+  @apply flex gap-5 text-[1.4rem] pb-[2.5rem];
+}
+
+.Story__action__button{
+  @apply flex gap-2.5 px-5 py-2.5 items-center border border-solid border-[color:var(--black)] rounded-lg;
+}
+
+.Story__action__button:hover{
+  @apply border-[color:var(--gold)] text-[color:var(--gold)];
+}
+
+.Story__statement{
+  @apply flex gap-2.5 items-center pb-[2.5rem];;
+}
+
+.Chaps_per_week, .Number_of_reads, .Recommend, .Store{
+  @apply flex flex-col gap-[5px] items-center text-[1.4rem] w-[8rem];
+}
+
+.Chaps_per_week, .Number_of_reads, .Recommend{
+  @apply border-r-[color:var(--gray)] border-r-[solid] border-r;
+}
+
+.Story__status_type{
+  @apply flex gap-2.5 items-center;
+}
+
+.Story__status_btn{
+  @apply flex flex-col gap-[5px] items-center text-[1.4rem] w-[10rem] border border-solid border-[color:var(--gold)] text-[color:var(--gold)];
+}
+
+.Story__type_btn{
+  @apply flex flex-col gap-[5px] items-center text-[1.4rem] w-[10rem] border border-solid border-[color:var(--pastel)] text-[color:var(--pastel)];
+}
+
+.Story_detail__new_chap, 
+.Story_detail__description, 
+.Story_detail__relative_stories, 
+.Story_detail__same_posts{
+  @apply flex flex-col gap-[5px] items-center text-[1.4rem] w-full;
+}
+
+.title_wrapper{
+  @apply flex justify-between w-full px-2.5 py-2.5 bg-[color:var(--title-bg-color)] items-center;
+}
+
+.title{
+  font-family: "DFVN Bridge Type", serif;
+  @apply flex flex-col gap-[5px] font-bold items-center pl-2.5 text-[1.6rem] border-l-[color:var(--white)] border-l-[solid] border-l-[4px];
+}
+
+.see_more_btn{
+  @apply flex gap-[5px] items-center text-[1.4rem] p-2.5;
+}
+
+.Story_detail__new_chap--see_more_btn:hover{
+  @apply text-[color:var(--gold)];
+}
+
+.Story_detail__new_chap--info{
+  @apply flex flex-col gap-[5px] justify-center text-[1.4rem] w-full px-5 pb-5 border-b-[color:var(--gray)] border-b-[solid] border-b;
+}
+
+.Story_detail__new_chap--name{
+  @apply text-[color:var(--gold)];
+}
+
+.Story_detail__new_chap--time{}
+
+
+.Story_detail__description--content{
+  @apply block whitespace-pre-line w-full break-words px-2.5;
+}
+
+.Relative--comic_list{
+  @apply flex flex-col gap-[20px] w-full px-2.5 text-[1.4rem];
+}
+
+.Relative--comic{
+  @apply flex justify-between w-full items-center;
+  text-wrap: nowrap;
+}
+
+.Relative__comic--type{
+  @apply w-[100px] text-[1.2rem] text-[color:var(--gray)];
+}
+
+.Relative__comic--title{
+  font-family: "DFVN Bridge Type", serif;
+  @apply w-[200px] text-[1.4rem] cursor-pointer font-bold;
+}
+
+.Relative__comic--title:hover{
+  @apply text-[color:var(--gold)];
+}
+
+.Relative__comic--chapter_amount{
+  @apply w-[300px] text-[1.4rem] block text-ellipsis overflow-hidden max-w-[240px] max-h-[3.6em] leading-[1.8em] text-start cursor-pointer;
+  word-wrap: break-word;
+}
+
+.Relative__comic--translator, .Relative__comic--status{
+  @apply w-[100px] text-[color:var(--gray)] text-[1.2rem];
+
+}

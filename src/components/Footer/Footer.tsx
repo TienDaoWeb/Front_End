@@ -10,7 +10,7 @@ function Footer() {
   return (
     <div className='Footer__wrapper'>
       <div className="Footer">
-        <img src="./public/assets/Logo.png" alt="Logo" className="Footer__logo" />
+        <img src="/assets/Logo.png" alt="Logo" className="Footer__logo" />
         <div className="Footer__nav">
           <a className='Footer__nav--item' href="#introduction">Giới thiệu</a>
           <a className='Footer__nav--item' href="#policyandsecurity">Chính sách và bảo mật</a>

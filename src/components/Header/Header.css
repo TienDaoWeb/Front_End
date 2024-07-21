@@ -1,5 +1,5 @@
 .Header__wrapper {
-  @apply w-full h-[70px];
+  @apply flex w-full h-[70px];
 }
 .Header {
   @apply w-full h-full flex items-center justify-between text-[1.6rem] bg-[color:var(--background-color-1)] select-none flex-nowrap px-[100px] py-0;
@@ -15,16 +15,20 @@
   font-family: "UTM ThuPhap Thien An", serif;
 }
 .Header__logo {
-  @apply bg-[url('/assets/Logo.png')] bg-contain bg-[center_center] w-[50px] h-[50px];
+  @apply bg-[url('/assets/Logo.png')] bg-no-repeat bg-contain bg-[center_center] w-[50px] h-[50px];
 }
 .Header__name:hover .Header__logo {
   @apply bg-[url('/assets/Logo\_gold.png')] bg-contain bg-[center_center] w-[50px] h-[50px];
 }
 .Header__Type {
   @apply flex gap-[10px] items-center font-[600] text-[1.6rem] w-fit;
+    font-family: "DFVN Bridge Type", serif;
+
 }
 .Header_rank {
   @apply font-[600] text-[1.6rem] w-fit;
+    font-family: "DFVN Bridge Type", serif;
+
 }
 .Header__search {
   @apply flex relative h-[40px];
@@ -39,11 +43,14 @@
   @apply flex gap-[10px];
 }
 .Header__action--btn-up {
-  @apply bg-transparent w-[120px] flex gap-[10px] items-center font-medium text-[1.6rem] text-center leading-[30px] p-2.5 border-none;
+  @apply bg-transparent w-[150px] flex gap-[10px] items-center font-medium text-[1.6rem] text-center leading-[30px] p-[10px] border-none justify-center;
+  font-family: "DFVN Bridge Type", serif;
 }
 .Header__action--btn-login,
 .Header__action--btn-sign-up {
-  @apply bg-transparent flex items-center border-none w-[80px];
+  @apply bg-transparent flex items-center border-none p-[10px] justify-center;
+  font-family: "DFVN Bridge Type", serif;
+
 }
 .Header__name:hover,
 .Header__Type:hover,

@@ -17,9 +17,9 @@
   @apply flex gap-2.5;
 }
 .Footer__link--btn {
-  @apply text-[1.4rem] bg-transparent w-10 h-10 border-[none];
+  @apply text-[1.6rem] bg-transparent w-10 h-10 border-none;
 }
 .Footer__nav--item:hover,
 .Footer__link--btn:hover {
-  @apply text-[color:var(--gold)] border-[none];
+  @apply text-[color:var(--gold)] border-none;
 }
