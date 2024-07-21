@@ -19,5 +19,16 @@ export default defineConfig({
     alias: {
       '~': path.resolve(__dirname, './src')
     }
-  }
+  },
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash][extname]',
+      },
+    },
+  },
 })
