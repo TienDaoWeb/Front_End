@@ -24,28 +24,28 @@ function RankPage() {
 
   const slides_top = [
     {
-      src: "./public/assets/images/slide1.jpg"
+      src: "/assets/images/slide1.jpg"
     },
     {
-      src: "./public/assets/images/slide3.jpg"
+      src: "/assets/images/slide3.jpg"
     },
     {
-      src: "./public/assets/images/slide4.jpg"
+      src: "/assets/images/slide4.jpg"
     },
     {
-      src: "./public/assets/images/slide5.jpg"
+      src: "/assets/images/slide5.jpg"
     },
     {
-      src: "./public/assets/images/slide6.jpg"
+      src: "/assets/images/slide6.jpg"
     },
     {
-      src: "./public/assets/images/slide7.jpg"
+      src: "/assets/images/slide7.jpg"
     },
     {
-      src: "./public/assets/images/slide8.jpg"
+      src: "/assets/images/slide8.jpg"
     },
     {
-      src: "./public/assets/images/slide9.jpg"
+      src: "/assets/images/slide9.jpg"
     },
   ]
 
@@ -103,7 +103,7 @@ function RankPage() {
               <div className="line"></div>
               <div className="Trending_page__nomination--comic_list">
                 <div className="Trending_page__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
                   <div className="Trending_page__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Trending_page__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -116,7 +116,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Trending_page__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
                   <div className="Trending_page__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Trending_page__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -129,7 +129,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Trending_page__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
                   <div className="Trending_page__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Trending_page__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -142,7 +142,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Trending_page__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
                   <div className="Trending_page__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Trending_page__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -155,7 +155,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Trending_page__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
                   <div className="Trending_page__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Trending_page__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -168,7 +168,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Trending_page__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
                   <div className="Trending_page__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Trending_page__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -189,7 +189,7 @@ function RankPage() {
               <div className="line"></div>
               <div className="Trending_page__nomination--comic_list">
                 <div className="Trending_page__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Trending_page__nomination--comic__img" />
                   <div className="Trending_page__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Trending_page__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -202,7 +202,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
                   <div className="Homepage__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -215,7 +215,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
                   <div className="Homepage__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -228,7 +228,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
                   <div className="Homepage__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -241,7 +241,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
                   <div className="Homepage__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -254,7 +254,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
                   <div className="Homepage__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -273,7 +273,7 @@ function RankPage() {
               <div className="line"></div>
               <div className="Homepage__reading--comic_list">
                 <div className="Homepage__reading--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
                   <div className="Reading__comic--info">
                     <h2 className="Reading__comic--title">Linh cảnh hành giả</h2>
                     <div className="flex justify-between items-center w-full">
@@ -283,7 +283,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__reading--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
                   <div className="Reading__comic--info">
                     <h2 className="Reading__comic--title">Linh cảnh hành giả</h2>
                     <div className="flex justify-between items-center w-full">
@@ -293,7 +293,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__reading--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
                   <div className="Reading__comic--info">
                     <h2 className="Reading__comic--title">Linh cảnh hành giả</h2>
                     <div className="flex justify-between items-center w-full">
@@ -303,7 +303,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__reading--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
                   <div className="Reading__comic--info">
                     <h2 className="Reading__comic--title">Linh cảnh hành giả</h2>
                     <div className="flex justify-between items-center w-full">
@@ -374,7 +374,7 @@ function RankPage() {
               <h1 className="Reading_week__title">Đọc nhiều trong tuần</h1>
               <div className="Reading_week__comic_list">
                 <div className="comic__top_1">
-                  <img src="./public/assets/images/medal_1.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_1.png" alt="comic medal 1" className="comic__medal" />
                   <div className="comic__top_1--info">
                     <h2 className="comic__title">Linh cảnh hành giả</h2>
                     <span className="comic__top_1--view">
@@ -398,12 +398,12 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="comic__top_2">
-                  <img src="./public/assets/images/medal_2.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_2.png" alt="comic medal 1" className="comic__medal" />
                   <h2 className="comic__title">Tiên Nghịch</h2>
                   <span className="comic__view">90,000</span>
                 </div>
                 <div className="comic__top_3">
-                  <img src="./public/assets/images/medal_3.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_3.png" alt="comic medal 1" className="comic__medal" />
                   <h2 className="comic__title">Thế giới hoàn mỹ</h2>
                   <span className="comic__view">80,000</span>
                 </div>
@@ -448,7 +448,7 @@ function RankPage() {
               <h1 className="Trending_week__title">Thịnh hành trong tuần</h1>
               <div className="Trending_week__comic_list">
                 <div className="comic__top_1">
-                  <img src="./public/assets/images/medal_1.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_1.png" alt="comic medal 1" className="comic__medal" />
                   <div className="comic__top_1--info">
                     <h2 className="comic__title">Linh cảnh hành giả</h2>
                     <span className="comic__top_1--view">
@@ -472,12 +472,12 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="comic__top_2">
-                  <img src="./public/assets/images/medal_2.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_2.png" alt="comic medal 1" className="comic__medal" />
                   <h2 className="comic__title">Tiên Nghịch</h2>
                   <span className="comic__view">90,000</span>
                 </div>
                 <div className="comic__top_3">
-                  <img src="./public/assets/images/medal_3.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_3.png" alt="comic medal 1" className="comic__medal" />
                   <h2 className="comic__title">Thế giới hoàn mỹ</h2>
                   <span className="comic__view">80,000</span>
                 </div>
@@ -522,7 +522,7 @@ function RankPage() {
               <h1 className="Nominating_week__title">Đề cử trong tuần</h1>
               <div className="Nominating_week__comic_list">
                 <div className="comic__top_1">
-                  <img src="./public/assets/images/medal_1.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_1.png" alt="comic medal 1" className="comic__medal" />
                   <div className="comic__top_1--info">
                     <h2 className="comic__title">Linh cảnh hành giả</h2>
                     <span className="comic__top_1--view">
@@ -546,12 +546,12 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="comic__top_2">
-                  <img src="./public/assets/images/medal_2.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_2.png" alt="comic medal 1" className="comic__medal" />
                   <h2 className="comic__title">Tiên Nghịch</h2>
                   <span className="comic__view">90,000</span>
                 </div>
                 <div className="comic__top_3">
-                  <img src="./public/assets/images/medal_3.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_3.png" alt="comic medal 1" className="comic__medal" />
                   <h2 className="comic__title">Thế giới hoàn mỹ</h2>
                   <span className="comic__view">80,000</span>
                 </div>
@@ -599,7 +599,7 @@ function RankPage() {
               <div className="line"></div>
               <div className="Homepage__highly_rated--comic_list">
                 <div className="Homepage__highly_rated--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
                   <div className="Highly_rated__comic--info">
                     <div className="Comic__title_type">
                       <h2 className="Highly_rated__comic--title">Linh cảnh hành giả</h2>
@@ -616,7 +616,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__highly_rated--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
                   <div className="Highly_rated__comic--info">
                     <div className="Comic__title_type">
                       <h2 className="Highly_rated__comic--title">Linh cảnh hành giả</h2>
@@ -633,7 +633,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__highly_rated--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
                   <div className="Highly_rated__comic--info">
                     <div className="Comic__title_type">
                       <h2 className="Highly_rated__comic--title">Linh cảnh hành giả</h2>
@@ -650,7 +650,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__highly_rated--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
                   <div className="Highly_rated__comic--info">
                     <div className="Comic__title_type">
                       <h2 className="Highly_rated__comic--title">Linh cảnh hành giả</h2>
@@ -667,7 +667,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__highly_rated--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
                   <div className="Highly_rated__comic--info">
                     <div className="Comic__title_type">
                       <h2 className="Highly_rated__comic--title">Linh cảnh hành giả</h2>
@@ -684,7 +684,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__highly_rated--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
                   <div className="Highly_rated__comic--info">
                     <div className="Comic__title_type">
                       <h2 className="Highly_rated__comic--title">Linh cảnh hành giả</h2>
@@ -786,7 +786,7 @@ function RankPage() {
               <div className="line"></div>
               <div className="Homepage__new_finish--comic_list">
                 <div className="Homepage__new_finish--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
                   <div className="Homepage__new_finish--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
@@ -799,7 +799,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__new_finish--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
                   <div className="Homepage__new_finish--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
@@ -812,7 +812,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__new_finish--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
                   <div className="Homepage__new_finish--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
@@ -825,7 +825,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__new_finish--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
                   <div className="Homepage__new_finish--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
@@ -838,7 +838,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__new_finish--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
                   <div className="Homepage__new_finish--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
@@ -851,7 +851,7 @@ function RankPage() {
                   </div>
                 </div>
                 <div className="Homepage__new_finish--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
                   <div className="Homepage__new_finish--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>

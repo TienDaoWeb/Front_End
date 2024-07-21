@@ -26,63 +26,63 @@ function HomePage() {
 
   const slides = [
     {
-      src: "./public/assets/images/linh_canh_hanh_gia.jpg",
+      src: "/assets/images/linh_canh_hanh_gia.jpg",
       title: "Linh hành cảnh giả",
       introduction: " Tuyên cổ thông kim, nghe đồn thế có Linh cảnh.Liên quan tới Linh cảnh thuyết pháp, các triều đại danh nhân nhã sĩ chúng thuyết phân đàn, trong thơ ghi chép:\"Từ Tề đến Đường, tư sơn thâm hoang, Linh cảnh tịch liêu, hiếm người du lịch.Linh cảnh không thể trạng, quỷ công lượng khó cầu.\"Thân Thành đại học năm nhất tân sinh Trương Nguyên Thanh, tại dưới một lần cơ duyên xảo hợp, đạt được một tấm hội sở thẻ VIP Chí Tôn, a không, là thẻ thông hành Linh cảnh. ",
       author: "Mại Báo Tiểu Lang Quân",
       genre: "Khoa huyễn"
     },
     {
-      src: "./public/assets/images/TienNghich.jpg",
+      src: "/assets/images/TienNghich.jpg",
       title: "Tiên nghịch",
       introduction: "Tiên Nghịch là câu chuyện Tiên Hiệp kể về Vương Lâm - một thiếu niên bình thường, may mắn được gia nhập vào một môn phái tu tiên xuống dốc của nước Triệu, vì thiếu linh căn, vì một hiểu nhầm tai hại, vì một khối thiết tinh và nhờ có được một \"Thần Bí Hạt Châu\". Vương Lâm đã bước lên con đường tu tiên và trên con đường này, hắn sẽ đối mặt với chuyện gì?",
       author: "Nhĩ Căn",
       genre: "Tiên hiệp"
     },
     {
-      src: "./public/assets/images/thegioihoanmy.jpeg",
+      src: "/assets/images/thegioihoanmy.jpeg",
       title: "Thế giới hoàn mỹ",
       introduction: "Một hạt bụi có thể lấp biển, một cọng cỏ chém hết mặt trời mặt trăng và ngôi sao, trong nháy mắt ở giữa long trời lỡ đất. Quần hùng cùng nổi lên, vạn tộc mọc lên san sát như rừng, chư thánh tranh bá, loạn khắp đất trời. Hỏi mặt đất bao la, cuộc đời thăng trầm? Một thiếu niên theo trong đất hoang đi ra, tất cả bắt đầu từ nơi này...",
       author: "Thần Đông",
       genre: "Huyền huyễn"
     },
     {
-      src: "./public/assets/images/nghich-thien-chi-ton.jpg",
+      src: "/assets/images/nghich-thien-chi-ton.jpg",
       title: "Nghịch thiên chí tôn",
       introduction: "Mọi người ở vùng đất dị giới này đang truyền tai nhau về lai lịch của hắn, hắn là ai? Tại sao lại có nhiều huyền năng như vậy, có sức mạnh hủy diệt mọi thứ... Thật ra hắn chính là người hiện đại sống ở thế kỷ 21 có IQ cao ngất ngưỡng có thể nói là thiên tài, trong một lần hắn đi khảo cổ được bí ẩn dị thạch, mang về nhà liền chết do một tai nạn. Hồi sinh tại dị giới, mang theo thần bí dị thạch cộng với khí vận nghịch thiên, buff đến tung trời lở đất. Vừa đến \" nhặt \" được nghịch thiên công pháp, mang sứ mệnh: Đi đâu hiếp đó... í lộn... phải là đi hấp ma vương... nhầm.... đi giết ma vương",
       author: "Tam Thiếu Gia",
       genre: "Huyền huyễn"
     },
     {
-      src: "./public/assets/images/nhatthechiton.jpg",
+      src: "/assets/images/nhatthechiton.jpg",
       title: "Nhất thế chí tôn",
       introduction: "Ta cả đời này, không hỏi trước kia, không cầu kiếp sau, chỉ oanh oanh liệt liệt, khoái ý ân cừu, chỉ bại các tộc anh kiệt, ngạo tiếu lục đạo Thần Ma!",
       author: "Mực Thích Lặn Nước",
       genre: "Tiên hiệp"
     },
     {
-      src: "./public/assets/images/phamnhantutien.jpg",
+      src: "/assets/images/phamnhantutien.jpg",
       title: "Phàm nhân tu tiên",
       introduction: "Phàm Nhân Tu Tiên là một câu chuyện Tiên Hiệp kể về Hàn Lập - Một người bình thường nhưng lại gặp vô vàn cơ duyên để bước đi trên con đường tu tiên, không phải anh hùng - cũng chẳng phải tiểu nhân, Hàn Lập từng bước khẳng định mình... Liệu Hàn Lập và người yêu có thể cùng bước trên con đường tu tiên và có một cái kết hoàn mỹ? Những thử thách nào đang chờ đợi bọn họ?",
       author: "Vong Ngữ",
       genre: "Tiên hiệp"
     },
     {
-      src: "./public/assets/images/tongvo.png",
+      src: "/assets/images/tongvo.png",
       title: "Tống võ",
       introduction: "Cửu Châu Đại Lục, vạn quốc san sát. Doanh Vân xuyên việt Đại Tần, trở thành Thủy Hoàng thứ chín, cũng thu được cá mặn hệ thống, chỉ cần cá mặn, liền có thể kéo dài không ngừng thu được tưởng thưởng.",
       author: "Thần Sắc Mộ Nha",
       genre: "Tiên hiệp"
     },
     {
-      src: "./public/assets/images/natra.jpg",
+      src: "/assets/images/natra.jpg",
       title: "Na tra",
       introduction: "Câu chuyện kể về quá trình trưởng thành của người anh hùng nhỏ Na Tra. Đại ác quỷ Thạch Cơ đã lẩn trốn hàng nghìn năm, chờ cơ hội để chống lại thế lực công lý, mụ đã giúp vua Chu tàn bạo đàn áp thiên hạ. Lực lượng công lý đang mong chờ sự ra đời của một anh hùng. Vì âm mưu của chính mình, Thạch Cơ đã bắt đầu chỉ thị cho tay sai của mụ là Thân Công Báo để thoát khỏi Na Tra. Na Tra trước khi được sinh ra đã liên tục gặp phải những nguy hiểm, sau khi được sinh ra thì cậu lớn lên một cách thần kỳ trong một môi trường khác thường. Tuy nhiên, Na Tra vẫn luôn vui vẻ với cha mẹ và các anh trai của mình.",
       author: "Hứa Trọng Lâm",
       genre: "Tiên hiệp"
     },
     {
-      src: "./public/assets/images/vudongcankhon.jpg",
+      src: "/assets/images/vudongcankhon.jpg",
       title: "Vũ động càn khôn",
       introduction: "Vũ Động Càn Khôn - Từ xưa đến nay, con người luôn có khát vọng vươn lên đỉnh cao, để đổi lấy sự thành công họ đã hy sinh biết bao nhiêu mồ hôi và nước mắt. Tu Luyện chính là trộm đi âm dương, đoạt lấy tạo hóa, chuyển đổi Niết Bàn, nắm giữ sinh tử, chưởng quản Luân Hồi.",
       author: "Thiên Tàm Thổ Đậu",
@@ -92,28 +92,28 @@ function HomePage() {
 
   const slides_top = [
     {
-      src: "./public/assets/images/slide1.jpg"
+      src: "/assets/images/slide1.jpg"
     },
     {
-      src: "./public/assets/images/slide3.jpg"
+      src: "/assets/images/slide3.jpg"
     },
     {
-      src: "./public/assets/images/slide4.jpg"
+      src: "/assets/images/slide4.jpg"
     },
     {
-      src: "./public/assets/images/slide5.jpg"
+      src: "/assets/images/slide5.jpg"
     },
     {
-      src: "./public/assets/images/slide6.jpg"
+      src: "/assets/images/slide6.jpg"
     },
     {
-      src: "./public/assets/images/slide7.jpg"
+      src: "/assets/images/slide7.jpg"
     },
     {
-      src: "./public/assets/images/slide8.jpg"
+      src: "/assets/images/slide8.jpg"
     },
     {
-      src: "./public/assets/images/slide9.jpg"
+      src: "/assets/images/slide9.jpg"
     },
   ]
 
@@ -157,7 +157,7 @@ function HomePage() {
               <div className="line"></div>
               <div className="Homepage__nomination--comic_list">
                 <div className="Homepage__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
                   <div className="Homepage__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -170,7 +170,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
                   <div className="Homepage__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -183,7 +183,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
                   <div className="Homepage__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -196,7 +196,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
                   <div className="Homepage__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -209,7 +209,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
                   <div className="Homepage__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -222,7 +222,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__nomination--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img" />
                   <div className="Homepage__nomination--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__nomination--comic__title">Linh cảnh hành giả</h2>
@@ -241,7 +241,7 @@ function HomePage() {
               <div className="line"></div>
               <div className="Homepage__reading--comic_list">
                 <div className="Homepage__reading--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
                   <div className="Reading__comic--info">
                     <h2 className="Reading__comic--title">Linh cảnh hành giả</h2>
                     <div className="flex justify-between items-center w-full">
@@ -251,7 +251,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__reading--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
                   <div className="Reading__comic--info">
                     <h2 className="Reading__comic--title">Linh cảnh hành giả</h2>
                     <div className="flex justify-between items-center w-full">
@@ -261,7 +261,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__reading--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
                   <div className="Reading__comic--info">
                     <h2 className="Reading__comic--title">Linh cảnh hành giả</h2>
                     <div className="flex justify-between items-center w-full">
@@ -271,7 +271,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__reading--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Reading__comic--img" />
                   <div className="Reading__comic--info">
                     <h2 className="Reading__comic--title">Linh cảnh hành giả</h2>
                     <div className="flex justify-between items-center w-full">
@@ -342,7 +342,7 @@ function HomePage() {
               <h1 className="Reading_week__title">Đọc nhiều trong tuần</h1>
               <div className="Reading_week__comic_list">
                 <div className="comic__top_1">
-                  <img src="./public/assets/images/medal_1.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_1.png" alt="comic medal 1" className="comic__medal" />
                   <div className="comic__top_1--info">
                     <h2 className="comic__title">Linh cảnh hành giả</h2>
                     <span className="comic__top_1--view">
@@ -366,12 +366,12 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="comic__top_2">
-                  <img src="./public/assets/images/medal_2.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_2.png" alt="comic medal 1" className="comic__medal" />
                   <h2 className="comic__title">Tiên Nghịch</h2>
                   <span className="comic__view">90,000</span>
                 </div>
                 <div className="comic__top_3">
-                  <img src="./public/assets/images/medal_3.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_3.png" alt="comic medal 1" className="comic__medal" />
                   <h2 className="comic__title">Thế giới hoàn mỹ</h2>
                   <span className="comic__view">80,000</span>
                 </div>
@@ -416,7 +416,7 @@ function HomePage() {
               <h1 className="Trending_week__title">Thịnh hành trong tuần</h1>
               <div className="Trending_week__comic_list">
                 <div className="comic__top_1">
-                  <img src="./public/assets/images/medal_1.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_1.png" alt="comic medal 1" className="comic__medal" />
                   <div className="comic__top_1--info">
                     <h2 className="comic__title">Linh cảnh hành giả</h2>
                     <span className="comic__top_1--view">
@@ -440,12 +440,12 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="comic__top_2">
-                  <img src="./public/assets/images/medal_2.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_2.png" alt="comic medal 1" className="comic__medal" />
                   <h2 className="comic__title">Tiên Nghịch</h2>
                   <span className="comic__view">90,000</span>
                 </div>
                 <div className="comic__top_3">
-                  <img src="./public/assets/images/medal_3.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_3.png" alt="comic medal 1" className="comic__medal" />
                   <h2 className="comic__title">Thế giới hoàn mỹ</h2>
                   <span className="comic__view">80,000</span>
                 </div>
@@ -490,7 +490,7 @@ function HomePage() {
               <h1 className="Nominating_week__title">Đề cử trong tuần</h1>
               <div className="Nominating_week__comic_list">
                 <div className="comic__top_1">
-                  <img src="./public/assets/images/medal_1.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_1.png" alt="comic medal 1" className="comic__medal" />
                   <div className="comic__top_1--info">
                     <h2 className="comic__title">Linh cảnh hành giả</h2>
                     <span className="comic__top_1--view">
@@ -514,12 +514,12 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="comic__top_2">
-                  <img src="./public/assets/images/medal_2.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_2.png" alt="comic medal 1" className="comic__medal" />
                   <h2 className="comic__title">Tiên Nghịch</h2>
                   <span className="comic__view">90,000</span>
                 </div>
                 <div className="comic__top_3">
-                  <img src="./public/assets/images/medal_3.png" alt="comic medal 1" className="comic__medal" />
+                  <img src="/assets/images/medal_3.png" alt="comic medal 1" className="comic__medal" />
                   <h2 className="comic__title">Thế giới hoàn mỹ</h2>
                   <span className="comic__view">80,000</span>
                 </div>
@@ -567,7 +567,7 @@ function HomePage() {
               <div className="line"></div>
               <div className="Homepage__highly_rated--comic_list">
                 <div className="Homepage__highly_rated--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
                   <div className="Highly_rated__comic--info">
                     <div className="Comic__title_type">
                       <h2 className="Highly_rated__comic--title">Linh cảnh hành giả</h2>
@@ -584,7 +584,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__highly_rated--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
                   <div className="Highly_rated__comic--info">
                     <div className="Comic__title_type">
                       <h2 className="Highly_rated__comic--title">Linh cảnh hành giả</h2>
@@ -601,7 +601,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__highly_rated--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
                   <div className="Highly_rated__comic--info">
                     <div className="Comic__title_type">
                       <h2 className="Highly_rated__comic--title">Linh cảnh hành giả</h2>
@@ -618,7 +618,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__highly_rated--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
                   <div className="Highly_rated__comic--info">
                     <div className="Comic__title_type">
                       <h2 className="Highly_rated__comic--title">Linh cảnh hành giả</h2>
@@ -635,7 +635,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__highly_rated--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
                   <div className="Highly_rated__comic--info">
                     <div className="Comic__title_type">
                       <h2 className="Highly_rated__comic--title">Linh cảnh hành giả</h2>
@@ -652,7 +652,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__highly_rated--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
                   <div className="Highly_rated__comic--info">
                     <div className="Comic__title_type">
                       <h2 className="Highly_rated__comic--title">Linh cảnh hành giả</h2>
@@ -754,7 +754,7 @@ function HomePage() {
               <div className="line"></div>
               <div className="Homepage__new_finish--comic_list">
                 <div className="Homepage__new_finish--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
                   <div className="Homepage__new_finish--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
@@ -767,7 +767,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__new_finish--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
                   <div className="Homepage__new_finish--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
@@ -780,7 +780,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__new_finish--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
                   <div className="Homepage__new_finish--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
@@ -793,7 +793,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__new_finish--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
                   <div className="Homepage__new_finish--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
@@ -806,7 +806,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__new_finish--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
                   <div className="Homepage__new_finish--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
@@ -819,7 +819,7 @@ function HomePage() {
                   </div>
                 </div>
                 <div className="Homepage__new_finish--comic">
-                  <img src="./public/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
+                  <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img" />
                   <div className="Homepage__new_finish--comic__info">
                     <div className="Comic__title_type">
                       <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
