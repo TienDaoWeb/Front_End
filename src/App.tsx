@@ -1,10 +1,9 @@
 // App.tsx
-import React from 'react';
+import * as React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';; // Import component của trang Home
 import './App.css';
 import './index.css';
-import Login_Register from './components/Login_Register';
 import TrendingPage from './pages/RankPage';
 import StoryDetail from './pages/StoryDetail';
 
