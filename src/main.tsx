@@ -4,7 +4,6 @@ import App from "./App";
 import "./index.css";
  
 import { ThemeProvider } from "@material-tailwind/react";
-import MaterialTailwindProvider from "@material-tailwind/react";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

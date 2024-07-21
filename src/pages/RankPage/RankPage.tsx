@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,12 +9,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import SwiperCore from 'swiper';
 // import required modules
-import { Autoplay, Pagination, Navigation, EffectCards } from 'swiper/modules';
+import { Autoplay, EffectCards } from 'swiper/modules';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFeatherPointed } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
-import { faGlasses } from "@fortawesome/free-solid-svg-icons/faGlasses";
 
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
@@ -51,17 +49,17 @@ function RankPage() {
     },
   ]
 
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  // const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
-  const handleSlideChange = (swiper: any) => {
-    setActiveSlideIndex(swiper.realIndex);
-  };
+  // const handleSlideChange = (swiper: any) => {
+  //   setActiveSlideIndex(swiper.realIndex);
+  // };
 
-  const [tagActive, setTagActive] = useState('Thịnh hành');
+  // const [tagActive, setTagActive] = useState('Thịnh hành');
 
-  const handleActive = (name:string) =>{
-    setTagActive(name);
-  }
+  // const handleActive = (name:string) =>{
+  //   setTagActive(name);
+  // }
 
   return (
     <div className="Trending_page__wrapper">

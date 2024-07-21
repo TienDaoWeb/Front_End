@@ -3,7 +3,6 @@ import './Footer.css'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons/faYoutube';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 
 function Footer() {

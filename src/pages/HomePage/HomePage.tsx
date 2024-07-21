@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import SwiperCore from 'swiper';
 // import required modules
-import { Autoplay, Pagination, Navigation, EffectCards } from 'swiper/modules';
+import { Autoplay, EffectCards } from 'swiper/modules';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFeatherPointed } from "@fortawesome/free-solid-svg-icons";

@@ -1,67 +1,52 @@
-import React, { useRef, useState, useEffect } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-cards';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import SwiperCore from 'swiper';
-// import required modules
-import { Autoplay, Pagination, Navigation, EffectCards } from 'swiper/modules';
+import { useState} from 'react';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBookmark, faBookOpen, faCaretRight, faCommentDots, faFeatherPointed, faListUl, faStar } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
-import { faGlasses } from "@fortawesome/free-solid-svg-icons/faGlasses";
+import { faBookmark, faBookOpen, faCaretRight, faCommentDots, faListUl, faStar } from "@fortawesome/free-solid-svg-icons";
 
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import './StoryDetail.css'
 
-SwiperCore.use([EffectCards]);
-
 function StoryDetail() {
 
-  const slides_top = [
-    {
-      src: "./public/assets/images/slide1.jpg"
-    },
-    {
-      src: "./public/assets/images/slide3.jpg"
-    },
-    {
-      src: "./public/assets/images/slide4.jpg"
-    },
-    {
-      src: "./public/assets/images/slide5.jpg"
-    },
-    {
-      src: "./public/assets/images/slide6.jpg"
-    },
-    {
-      src: "./public/assets/images/slide7.jpg"
-    },
-    {
-      src: "./public/assets/images/slide8.jpg"
-    },
-    {
-      src: "./public/assets/images/slide9.jpg"
-    },
-  ]
+//   const slides_top = [
+//     {
+//       src: "./public/assets/images/slide1.jpg"
+//     },
+//     {
+//       src: "./public/assets/images/slide3.jpg"
+//     },
+//     {
+//       src: "./public/assets/images/slide4.jpg"
+//     },
+//     {
+//       src: "./public/assets/images/slide5.jpg"
+//     },
+//     {
+//       src: "./public/assets/images/slide6.jpg"
+//     },
+//     {
+//       src: "./public/assets/images/slide7.jpg"
+//     },
+//     {
+//       src: "./public/assets/images/slide8.jpg"
+//     },
+//     {
+//       src: "./public/assets/images/slide9.jpg"
+//     },
+//   ]
 
-  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+//   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
-  const handleSlideChange = (swiper: any) => {
-    setActiveSlideIndex(swiper.realIndex);
-  };
+//   const handleSlideChange = (swiper: any) => {
+//     setActiveSlideIndex(swiper.realIndex);
+//   };
 
-  const [tagActive, setTagActive] = useState('Thịnh hành');
+//   const [tagActive, setTagActive] = useState('Thịnh hành');
 
-  const handleActive = (name:string) =>{
-    setTagActive(name);
-  }
+//   const handleActive = (name:string) =>{
+//     setTagActive(name);
+//   }
 
   return (
     <div className="Story_detail__wrapper">
