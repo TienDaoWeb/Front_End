@@ -13,8 +13,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/rank" element={<TrendingPage />} />
-        <Route path="/truyen/:slug" element={<StoryDetail />} />
+        <Route path="/trending" element={<TrendingPage />} />
+        <Route path="/story-detail/:slug" element={<StoryDetail />} />
         {/* <Route path="/Login_Register" element={<Login_Register />} /> */}
         {/* Các route khác (nếu có) */}
       </Routes>
