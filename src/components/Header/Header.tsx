@@ -4,7 +4,6 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faList, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUp } from '@fortawesome/free-regular-svg-icons';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 library.add(faList);
