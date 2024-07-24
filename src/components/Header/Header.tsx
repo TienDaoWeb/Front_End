@@ -6,22 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUp } from '@fortawesome/free-regular-svg-icons';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import LoginRegister from '../LoginRegister';
 
 library.add(faList);
 
 function Header() {
-  const [isLoginRegisterOpen, setIsLoginRegisterOpen] = useState(false);
-  const [tagOpen, setTagOpen] = useState("");
-
-  const handleCloseLoginRegister = () => {
-    setIsLoginRegisterOpen(false);
-  };
-
-  const handleLoginRegisterOpen = (tag:string) =>{
-    setTagOpen(tag);
-    setIsLoginRegisterOpen(true);
-  }
   return (<div className='Header__wrapper'>
     <div className="Header">
       <div className='Header__left'>
