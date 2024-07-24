@@ -5,17 +5,23 @@ import { faList, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUp } from '@fortawesome/free-regular-svg-icons';
 import { useState } from 'react';
-import Login_Register from '../Login_Register';
 import { Link } from 'react-router-dom';
+import LoginRegister from '../LoginRegister';
 
 library.add(faList);
 
 function Header() {
   const [isLoginRegisterOpen, setIsLoginRegisterOpen] = useState(false);
+  const [tagOpen, setTagOpen] = useState("");
 
   const handleCloseLoginRegister = () => {
     setIsLoginRegisterOpen(false);
   };
+
+  const handleLoginRegisterOpen = (tag:string) =>{
+    setTagOpen(tag);
+    setIsLoginRegisterOpen(true);
+  }
   return (<div className='Header__wrapper'>
     <div className="Header">
       <div className='Header__left'>
@@ -40,12 +46,7 @@ function Header() {
             <FontAwesomeIcon icon={faCircleUp} />
             Đăng truyện
         </button>
-        <button onClick={() => setIsLoginRegisterOpen(true)} className='Header__action--btn-login'>Đăng nhập</button>
-        <button onClick={() => setIsLoginRegisterOpen(true)} className='Header__action--btn-sign-up'>Đăng ký</button>
-        <Login_Register
-          isOpen={isLoginRegisterOpen}
-          onClose={handleCloseLoginRegister}
-        />
+        <Link to={'/login-register'} className='Header__action--btn-login'>Đăng nhập/Đăng ký</Link>
       </div>
     </div>
   </div>);

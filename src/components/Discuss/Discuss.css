@@ -1,0 +1,28 @@
+.Discuss__wrapper {
+  @apply w-full select-none px-[5rem] py-[2rem];
+}
+
+.Discuss {
+  @apply flex flex-col w-full gap-5 items-center p-[3rem] border border-[#E5E5E5] rounded-b-3xl bg-[color:var(--background-color-1)];
+}
+
+.Discuss_form__label{
+  font-family: "DFVN Bridge Type", serif;
+  @apply text-[1.6rem] w-full;
+}
+
+.Discuss__content{
+  @apply flex flex-col gap-5 w-full;
+}
+
+.Discuss_form__input{
+  @apply w-full border border-[#E5E5E5] rounded-[0.5rem] p-5 text-[1.6rem];
+}
+
+.Discuss__submit_btn{
+  @apply flex flex-col gap-[5px] items-center text-[1.6rem] px-[3rem] border border-solid border-[color:var(--gold)] text-[color:var(--gold)] rounded-lg py-2.5;
+}
+
+.Discuss__submit_btn:hover{
+  @apply bg-[color:var(--gold)] text-[color:var(--white)] border-[color:var(--gold)];
+}

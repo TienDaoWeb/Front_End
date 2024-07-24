@@ -9,6 +9,7 @@ module.exports = withMT({
     "./components/**/*.{js,ts,jsx,tsx}",
     "./widgets/**/*.{js,ts,jsx,tsx}",
     "./docs-content/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
     "./documentation/**/*.mdx",
     "./public/material-tailwind-html-v2.js",
   ],

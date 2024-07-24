@@ -87,7 +87,7 @@
 }
 
 .Homepage__nomination--comic__intro, .Highly_rated__comic--intro {
-  @apply text-[1.4rem] block text-ellipsis overflow-hidden max-w-[240px] max-h-[3.6em] leading-[1.8em];
+  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-[240px] max-h-[3.6em] leading-[1.8em];
 }
 
 .Homepage__nomination--comic__author, .Highly_rated__comic--author {
@@ -126,7 +126,7 @@
 }
 
 .Reading__comic--title, .Review__user_name, .Review__story_name {
-  @apply text-[1.4rem] w-full font-bold block text-ellipsis overflow-hidden max-w-[150px] max-h-[2em] leading-[1.8em];
+  @apply text-[1.6rem] w-full font-bold block text-ellipsis overflow-hidden max-w-[150px] max-h-[2em] leading-[1.8em];
   text-wrap: nowrap;
 }
 
@@ -160,11 +160,11 @@
 }
 
 .New_update__comic--title {
-  @apply w-[200px] text-[1.4rem] cursor-pointer;
+  @apply w-[200px] text-[1.6rem] cursor-pointer;
 }
 
 .New_update__comic--chapter {
-  @apply w-[300px] text-[1.4rem] block text-ellipsis overflow-hidden max-w-[240px] max-h-[3.6em] leading-[1.8em] text-start cursor-pointer;
+  @apply w-[300px] text-[1.6rem] block text-ellipsis overflow-hidden max-w-[240px] max-h-[3.6em] leading-[1.8em] text-start cursor-pointer;
   word-wrap: break-word;
 }
 
@@ -174,7 +174,7 @@
 }
 
 .New_update__comic--author {
-  @apply w-[150px] text-[1.4rem];
+  @apply w-[150px] text-[1.6rem];
 }
 
 .New_update__comic--translator,
@@ -278,7 +278,7 @@
 }
 
 .Highly_rated__comic--rate{
-  @apply flex gap-[40px] items-center font-bold text-[1.4rem];
+  @apply flex gap-[40px] items-center font-bold text-[1.6rem];
 }
 
 .Rate__amount{
@@ -311,7 +311,7 @@
 }
   
 .Review__content{
-  @apply text-[1.4rem] block text-ellipsis overflow-hidden max-w-[240px] h-[4em] leading-[1.8em];
+  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-[240px] h-[4em] leading-[1.8em];
 }
 
 .Homepage__new_release{
@@ -390,7 +390,7 @@
 }
 
 .Slide____intro{
-  @apply text-[1.4rem] block text-ellipsis overflow-hidden max-w-[240px] h-[3.6em] max-h-[3.6em] leading-[1.8em];
+  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-[240px] h-[3.6em] max-h-[3.6em] leading-[1.8em];
 }
 
 .Slide____author{
@@ -427,7 +427,7 @@
 }
 
 .Homepage__new_finish--comic__intro {
-  @apply text-[1.4rem] block text-ellipsis overflow-hidden max-w-[240px] max-h-[3.6em] leading-[1.8em];
+  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-[240px] max-h-[3.6em] leading-[1.8em];
 }
 
 .Homepage__new_finish--comic__author {

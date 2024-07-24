@@ -1,25 +1,48 @@
 .Footer__wrapper {
   @apply w-full bg-[color:var(--background-color-1)] select-none px-[100px] py-0;
 }
+
 .Footer {
-  @apply flex h-[100px] w-full items-center justify-between;
+  @apply flex flex-col w-full items-center justify-between py-5 gap-5;
 }
+
+.Footer__web_name{
+  @apply flex items-center gap-[10px] w-fit;
+}
+
+.Footer__web_introduction{
+  @apply w-full text-[1.6rem] text-center font-light;
+}
+
 .Footer__logo {
-  @apply h-[75px] object-contain;
+  @apply h-[10rem] object-contain;
 }
-.Footer__nav {
+
+.Footer__web_name {
+  @apply text-[3rem] font-normal not-italic;
+  font-family: "UTM ThuPhap Thien An", serif;
+}
+
+.Footer__license{
+  @apply w-full text-[1.6rem] text-center;
+}
+
+/* .Footer__nav {
   @apply flex gap-5;
 }
+
 .Footer__nav--item {
-  @apply text-[1.4rem] text-[color:var(--black)] font-normal;
+  @apply text-[1.6rem] text-[color:var(--black)] font-normal;
 }
 .Footer__link {
   @apply flex gap-2.5;
 }
+
 .Footer__link--btn {
   @apply text-[1.6rem] bg-transparent w-10 h-10 border-none;
 }
+
 .Footer__nav--item:hover,
 .Footer__link--btn:hover {
   @apply text-[color:var(--gold)] border-none;
-}
+} */

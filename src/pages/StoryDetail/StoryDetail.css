@@ -28,11 +28,11 @@
 }
 
 .Story__author{
-  @apply text-[1.4rem] pb-[2.5rem];
+  @apply text-[1.6rem] pb-[2.5rem];
 }
 
 .Story__action{
-  @apply flex gap-5 text-[1.4rem] pb-[2.5rem];
+  @apply flex gap-5 text-[1.6rem] pb-[2.5rem];
 }
 
 .Story__action__button{
@@ -48,7 +48,7 @@
 }
 
 .Chaps_per_week, .Number_of_reads, .Recommend, .Store{
-  @apply flex flex-col gap-[5px] items-center text-[1.4rem] w-[8rem];
+  @apply flex flex-col gap-[5px] items-center text-[1.6rem] w-[8rem];
 }
 
 .Chaps_per_week, .Number_of_reads, .Recommend{
@@ -60,18 +60,19 @@
 }
 
 .Story__status_btn{
-  @apply flex flex-col gap-[5px] items-center text-[1.4rem] w-[10rem] border border-solid border-[color:var(--gold)] text-[color:var(--gold)];
+  @apply flex flex-col gap-[5px] items-center text-[1.6rem] w-[10rem] border border-solid border-[color:var(--gold)] text-[color:var(--gold)] rounded-lg py-2.5;
 }
 
 .Story__type_btn{
-  @apply flex flex-col gap-[5px] items-center text-[1.4rem] w-[10rem] border border-solid border-[color:var(--pastel)] text-[color:var(--pastel)];
+  @apply flex flex-col gap-[5px] items-center text-[1.6rem] w-[10rem] border border-solid border-[color:var(--pastel)] text-[color:var(--pastel)] rounded-lg py-2.5;
 }
 
 .Story_detail__new_chap, 
 .Story_detail__description, 
 .Story_detail__relative_stories, 
-.Story_detail__same_posts{
-  @apply flex flex-col gap-[5px] items-center text-[1.4rem] w-full;
+.Story_detail__same_posts,
+.Story_detail__reaction{
+  @apply flex flex-col gap-[5px] items-center text-[1.6rem] w-full;
 }
 
 .title_wrapper{
@@ -84,7 +85,7 @@
 }
 
 .see_more_btn{
-  @apply flex gap-[5px] items-center text-[1.4rem] p-2.5;
+  @apply flex gap-[5px] items-center text-[1.6rem] p-2.5;
 }
 
 .Story_detail__new_chap--see_more_btn:hover{
@@ -92,11 +93,11 @@
 }
 
 .Story_detail__new_chap--info{
-  @apply flex flex-col gap-[5px] justify-center text-[1.4rem] w-full px-5 pb-5 border-b-[color:var(--gray)] border-b-[solid] border-b;
+  @apply flex flex-col gap-[5px] justify-center text-[1.6rem] w-full px-5 pb-5 border-b-[color:var(--gray)] border-b-[solid] border-b;
 }
 
 .Story_detail__new_chap--name{
-  @apply text-[color:var(--gold)];
+  @apply text-[color:var(--gold)] font-bold;
 }
 
 .Story_detail__new_chap--time{}
@@ -107,7 +108,7 @@
 }
 
 .Relative--comic_list{
-  @apply flex flex-col gap-[20px] w-full px-2.5 text-[1.4rem];
+  @apply flex flex-col gap-[20px] w-full px-2.5 text-[1.6rem];
 }
 
 .Relative--comic{
@@ -121,7 +122,7 @@
 
 .Relative__comic--title{
   font-family: "DFVN Bridge Type", serif;
-  @apply w-[200px] text-[1.4rem] cursor-pointer font-bold;
+  @apply w-[200px] text-[1.6rem] cursor-pointer font-bold;
 }
 
 .Relative__comic--title:hover{
@@ -129,11 +130,40 @@
 }
 
 .Relative__comic--chapter_amount{
-  @apply w-[300px] text-[1.4rem] block text-ellipsis overflow-hidden max-w-[240px] max-h-[3.6em] leading-[1.8em] text-start cursor-pointer;
+  @apply w-[300px] text-[1.6rem] block text-ellipsis overflow-hidden max-w-[240px] max-h-[3.6em] leading-[1.8em] text-start cursor-pointer;
   word-wrap: break-word;
 }
 
 .Relative__comic--translator, .Relative__comic--status{
   @apply w-[100px] text-[color:var(--gray)] text-[1.2rem];
+}
 
+.Story_detail__same_posts--list{
+  @apply flex w-full flex-wrap grid-cols-[repeat(4)] gap-y-[auto] justify-between mt-5 px-[2rem];
+}
+
+.same_post{
+  @apply flex flex-col gap-[10px] text-[1.6rem] w-[18%] justify-center items-center;
+}
+
+.post_banner{
+  @apply w-[100%] h-[250px] object-cover;
+}
+
+.post_title{
+  @apply font-bold;
+  font-family: "DFVN Bridge Type", serif;
+}
+
+.reaction_btn__wrapper{
+  @apply flex items-center justify-center w-full bg-[color:var(--title-bg-color)];
+}
+
+.reaction_btn{
+  @apply flex w-[100px] h-[40px] items-center text-[1.6rem] justify-center;
+  font-family: "DFVN Bridge Type", serif;
+}
+
+.reaction_btn:active, .reaction_btn:hover{
+  @apply bg-[color:var(--gold)] text-[color:var(--white)];
 }

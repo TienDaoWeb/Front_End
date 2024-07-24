@@ -7,6 +7,7 @@
   consider using classes instead of the `@apply` directive
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
+
 @font-face {
   font-family: "UTM ThuPhap Thien An";
   src: url("/public/assets/fonts/UTMThuPhapThienAn.eot");
@@ -230,6 +231,8 @@
   --background-color-1: #f1f1f1;
   --blue: #0ea5e9;
   --gray: #8b8b8b;
+  --gray-trans: rgba(139, 139, 139, 0.75);
+  --white-trans: rgba(255, 255, 255, 0.75);
   --title-bg-color:rgb(228 222 206/1);
   --graident: linear-gradient(
     45deg,

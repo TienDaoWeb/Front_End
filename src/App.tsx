@@ -5,6 +5,8 @@ import './App.css';
 import './index.css';
 import StoryDetail from './pages/StoryDetail';
 import RankPage from './pages/RankPage';
+import ChapDetail from './pages/ChapDetail';
+import LoginRegister from './components/LoginRegister';
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/rank" element={<RankPage />} />
-        <Route path="/story-detail/:slug" element={<StoryDetail />} />
+        <Route path="/story-detail/:storyID" element={<StoryDetail />} />
+        <Route path="/story-detail/:storyID/:chapID" element={<ChapDetail />} />
+        <Route path="/login-register" element={<LoginRegister />} />
       </Routes>
     </Router>
   );

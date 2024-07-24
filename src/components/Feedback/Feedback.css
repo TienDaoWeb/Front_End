@@ -1,0 +1,23 @@
+.Feedback__wrapper {
+  @apply w-full select-none px-[100px] py-[2rem] border border-[#E5E5E5] rounded-b-lg bg-[color:var(--background-color-1)];
+}
+
+.Feedback {
+  @apply flex flex-col w-full gap-5 items-center;
+}
+
+.Feedback_form__label{
+  @apply text-[1.6rem] w-full;
+}
+
+.Feedback__rating_score, .Feedback__content{
+  @apply flex flex-col gap-5 w-full;
+}
+
+.Feedback_form__input{
+  @apply w-full border border-[#E5E5E5] rounded-[0.5rem] p-2.5;
+}
+
+.Feedback__submit_btn{
+  @apply flex flex-col gap-[5px] items-center text-[1.6rem] w-[10rem] border border-solid border-[color:var(--gold)] text-[color:var(--gold)] rounded-lg py-2.5;
+}

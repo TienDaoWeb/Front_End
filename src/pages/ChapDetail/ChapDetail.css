@@ -1,0 +1,59 @@
+.Chap_detail__wrapper{
+  @apply w-full flex flex-col relative w-screen clear-both select-none;
+}
+
+.Chap_detail{
+  @apply flex flex-col w-full mt-5 mb-10 px-[12rem] py-0 gap-5 items-center;
+}
+
+.Chap_detail__title{
+  font-family: "DFVN Bridge Type", serif;
+  @apply font-bold text-[2rem];
+}
+
+.Chap_detail__author{
+  @apply text-[1.6rem];
+}
+
+.Chap_pagination{
+  @apply flex items-center gap-5 text-[1.6rem];
+}
+
+.pagination__previous, .pagination__previous{
+  @apply flex gap-2.5 items-center justify-center text-[color:var(--gold)] border border-solid border-[color:var(--gold)] rounded-lg w-[12rem] py-2.5;
+}
+
+.Chap__title{
+  @apply border border-solid border-[color:var(--black)] rounded-lg p-2.5 w-[20rem] text-ellipsis text-center inline-block whitespace-nowrap overflow-hidden;
+}
+
+.Chap__action_top{
+  @apply flex gap-5 items-center;
+}
+
+.Chap__action_top_btn{
+  @apply flex gap-2.5 items-center border border-solid border-[color:var(--black)] rounded-lg px-5 py-2.5 text-[1.6rem];
+}
+
+.Chap__content{
+  display: block;
+  white-space: pre-wrap !important;
+  font-size: 2.4rem;
+  padding: 0 5rem;
+  margin-top: 2rem;
+}
+
+.Chap__action_bottom{
+  @apply flex items-center justify-between w-full px-[5rem] mt-5;
+}
+
+.Chap__action_bottom_btn{
+  @apply flex gap-2.5 items-center justify-center w-[15rem] py-2.5 text-[1.6rem] border border-solid border-[color:var(--gold)] rounded-lg  text-[color:var(--gold)];
+}
+
+.pagination__previous:hover, 
+.pagination__previous:hover,
+.Chap__action_top_btn:hover, 
+.Chap__action_bottom_btn:hover{
+  @apply bg-[color:var(--gold)] text-[color:var(--white)] border-[color:var(--gold)];
+}

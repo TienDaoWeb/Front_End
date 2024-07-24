@@ -2,10 +2,14 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark, faBookOpen, faCaretRight, faCommentDots, faListUl, faStar } from "@fortawesome/free-solid-svg-icons";
+// import ReactStarRating from "react-star-ratings-component";
 
 import Footer from "~/components/Footer";
 import Header from "~/components/Header";
 import './StoryDetail.css'
+import { useState } from "react";
+import Feedback from "~/components/Feedback";
+import Discuss from "~/components/Discuss";
 
 function StoryDetail() {
 
@@ -47,7 +51,7 @@ function StoryDetail() {
 //   const handleActive = (name:string) =>{
 //     setTagActive(name);
 //   }
-
+  const [activeComponent, setActiveComponent] = useState("feedback");
   return (
     <div className="Story_detail__wrapper">
       <Header />
@@ -149,28 +153,28 @@ function StoryDetail() {
           <div className="Relative--comic_list">
             <div className="Relative--comic">
               <span className="Relative__comic--type">Khoa huyễn</span>
-              <h2 className="Relative__comic--title">Linh cảnh hành giả</h2>
+              <h3 className="Relative__comic--title">Linh cảnh hành giả</h3>
               <span className="Relative__comic--status">Hoàn thành</span>
               <span className="Relative__comic--chapter_amount">150</span>
               <span className="Relative__comic--translator">DarkHero</span>
             </div>
             <div className="Relative--comic">
               <span className="Relative__comic--type">Khoa huyễn</span>
-              <h2 className="Relative__comic--title">Linh cảnh hành giả</h2>
+              <h3 className="Relative__comic--title">Linh cảnh hành giả</h3>
               <span className="Relative__comic--status">Hoàn thành</span>
               <span className="Relative__comic--chapter_amount">150</span>
               <span className="Relative__comic--translator">DarkHero</span>
             </div>
             <div className="Relative--comic">
               <span className="Relative__comic--type">Khoa huyễn</span>
-              <h2 className="Relative__comic--title">Linh cảnh hành giả</h2>
+              <h3 className="Relative__comic--title">Linh cảnh hành giả</h3>
               <span className="Relative__comic--status">Hoàn thành</span>
               <span className="Relative__comic--chapter_amount">150</span>
               <span className="Relative__comic--translator">DarkHero</span>
             </div>
             <div className="Relative--comic">
               <span className="Relative__comic--type">Khoa huyễn</span>
-              <h2 className="Relative__comic--title">Linh cảnh hành giả</h2>
+              <h3 className="Relative__comic--title">Linh cảnh hành giả</h3>
               <span className="Relative__comic--status">Hoàn thành</span>
               <span className="Relative__comic--chapter_amount">150</span>
               <span className="Relative__comic--translator">DarkHero</span>
@@ -185,6 +189,35 @@ function StoryDetail() {
               <FontAwesomeIcon icon={faCaretRight}/>
             </button>
           </div>
+          <div className="Story_detail__same_posts--list">
+            <div className="same_post">
+              <img src="/assets/images/phamnhantutien.jpg" alt="post banner" className="post_banner" />
+              <h3 className="post_title">Phàm nhân tu tiên</h3>
+            </div>
+            <div className="same_post">
+              <img src="/assets/images/phamnhantutien.jpg" alt="post banner" className="post_banner" />
+              <h3 className="post_title">Phàm nhân tu tiên</h3>
+            </div>
+            <div className="same_post">
+              <img src="/assets/images/phamnhantutien.jpg" alt="post banner" className="post_banner" />
+              <h3 className="post_title">Phàm nhân tu tiên</h3>
+            </div>
+            <div className="same_post">
+              <img src="/assets/images/phamnhantutien.jpg" alt="post banner" className="post_banner" />
+              <h3 className="post_title">Phàm nhân tu tiên</h3>
+            </div>
+            <div className="same_post">
+              <img src="/assets/images/phamnhantutien.jpg" alt="post banner" className="post_banner" />
+              <h3 className="post_title">Phàm nhân tu tiên</h3>
+            </div>
+          </div>
+        </div>
+        <div className="Story_detail__reaction">
+          <div className="reaction_btn__wrapper">
+            <button className="reaction_btn" onClick={() => setActiveComponent("feedback")}>Đánh giá</button>
+            <button className="reaction_btn" onClick={() => setActiveComponent("discuss")}>Thảo luận</button>
+          </div>
+          {activeComponent === "feedback" ? <Feedback/> : <Discuss/>}
         </div>
       </div>
       <Footer />
