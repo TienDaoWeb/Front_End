@@ -10,3 +10,9 @@
 .register_btn_active{
   z-index: 1;
 }
+
+.login_register {
+  height: 80rem;
+  background: url(/assets/images/background_image.jpg) no-repeat center;
+  background-size: cover;
+}

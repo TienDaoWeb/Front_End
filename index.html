@@ -12,5 +12,16 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="text/javascript" src="/jquery.ripples.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".login_register").ripples({
+          resolution: 200,
+          perturbance: .02,
+      });
+      });
+    </script>
   </body>
 </html>
