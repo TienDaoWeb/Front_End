@@ -6,7 +6,7 @@ const Register = () => {
   const handleSubmit = () => { }
 
   return (
-    <form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }} className='text-[1.6rem] flex flex-col gap-5 px-[3rem]'>
+    <form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }} className='text-[1.6rem] flex flex-col gap-2.5 px-[3rem]'>
       <label htmlFor="last_name" className='w-full'>Họ và Tên</label>
       <input
         type="text"

@@ -11,16 +11,29 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script type="text/javascript" src="/jquery.ripples.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script type="module" src="/src/main.tsx"></script>
     <script>
-      $(document).ready(function(){
+      // Đảm bảo rằng jQuery và jQuery Ripples đã được tải
+      window.addEventListener('load', function() {
+        // Sử dụng MutationObserver để theo dõi thay đổi của DOM
+        const observer = new MutationObserver(() => {
+          // Áp dụng hiệu ứng ripples cho các phần tử có class 'login_register'
+          $(".login_register").ripples({
+            resolution: 200,
+            perturbance: 0.02,
+          });
+        });
+
+        // Theo dõi tất cả các thay đổi trong body
+        observer.observe(document.body, { childList: true, subtree: true });
+
+        // Áp dụng hiệu ứng ripples ngay lập tức
         $(".login_register").ripples({
           resolution: 200,
-          perturbance: .02,
-      });
+          perturbance: 0.02,
+        });
       });
     </script>
   </body>

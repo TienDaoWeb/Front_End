@@ -5,7 +5,7 @@ const Login = () => {
 
   const handleSubmit = ()=>{}
 
-  return (<form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }} className='Login__form text-[1.6rem] flex flex-col gap-5 px-[3rem]'>
+  return (<form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }} className='Login__form text-[1.6rem] flex flex-col gap-2.5 px-[3rem]'>
     <label htmlFor="username">Tài khoản</label>
     <input
       type="text"

@@ -60,3 +60,37 @@
 .Header__action--btn-sign-up:hover {
   @apply text-[color:var(--gold)] cursor-pointer border-none;
 }
+
+.dropdown-toggle::after{
+  display: none !important; 
+}
+
+.Header__dropdown-button > button{
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--black) !important;
+}
+
+.Header__dropdown{
+  font-size: 1.6rem !important;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  height: fit-content;
+}
+
+.Header__dropdown--column{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 20rem;
+  padding: 1rem;
+}
+
+.Header__dropdown--column + .Header__dropdown--column{
+  border-left: 1px solid var(--black);
+}
+
+.dropdown-item:hover{
+  color: var(--gold) !important;
+}
