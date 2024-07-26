@@ -25,29 +25,29 @@ function HomePage() {
 
   const slides_top = [
     {
-      src: "/assets/images/slide1.jpg"
-    },
-    {
-      src: "/assets/images/slide3.jpg"
-    },
-    {
-      src: "/assets/images/slide4.jpg"
-    },
-    {
-      src: "/assets/images/slide5.jpg"
-    },
-    {
-      src: "/assets/images/slide6.jpg"
-    },
-    {
-      src: "/assets/images/slide7.jpg"
-    },
-    {
       src: "/assets/images/slide8.jpg"
+    },
+    {
+      src: "/assets/images/slide2.jpg"
     },
     {
       src: "/assets/images/slide9.jpg"
     },
+    // {
+    //   src: "/assets/images/slide5.jpg"
+    // },
+    // {
+    //   src: "/assets/images/slide6.jpg"
+    // },
+    // {
+    //   src: "/assets/images/slide7.jpg"
+    // },
+    // {
+    //   src: "/assets/images/slide8.jpg"
+    // },
+    // {
+    //   src: "/assets/images/slide9.jpg"
+    // },
   ]
 
   return (
@@ -58,8 +58,9 @@ function HomePage() {
           spaceBetween={40}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 5000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           }}
           pagination={{
             clickable: true,
@@ -69,8 +70,18 @@ function HomePage() {
           className="mySwiper-top"
         >
           {slides_top.map((slide_top, index) => (
-            <SwiperSlide key={index}>
-              <img src={slide_top.src} alt={`comic img ${index + 1}`} className="slide_top__img" />
+            <SwiperSlide key={index} className='slide_swipper'>
+              <div
+                className="slide_top__img"
+                style={{ 
+                  backgroundImage: `url(${slide_top.src})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'top',
+                  width: '100%',
+                  height: '600px',
+                  backgroundRepeat: 'no-repeat'
+                }}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

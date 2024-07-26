@@ -2,7 +2,6 @@ import './Header.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { faList, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleUp } from '@fortawesome/free-regular-svg-icons';
 import { Link } from 'react-router-dom';
 import { Dropdown, DropdownButton } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -58,10 +57,10 @@ function Header() {
           <FontAwesomeIcon className='Header__search--icon' icon={faMagnifyingGlass} />
         </div>
         <div className="Header__action">
-          <button className='Header__action--btn-up'>
+          {/* <button className='Header__action--btn-up'>
             <FontAwesomeIcon icon={faCircleUp} />
             Đăng truyện
-          </button>
+          </button> */}
           <Link to={'/login-register'} className='Header__action--btn-login'>Đăng nhập/Đăng ký</Link>
         </div>
       </div>

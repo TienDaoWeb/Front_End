@@ -23,10 +23,10 @@ const LoginRegister = () => {
       /> */}
       <div className="bg-[color:var(--white-trans)] py-10 px-[5rem] rounded-3xl shadow-md flex flex-col items-center justify-center gap-5 m-auto relative">
         <div className="flex items-center gap-2.5">
-          <img src="/assets/Logo.png" alt="Logo" className="h-[8rem] object-contain" />
+          <img src="https://res.cloudinary.com/djkgwo9kc/image/upload/v1721899786/azkbpvnmztc7ziuoog60.png" alt="Logo" className="h-[8rem] object-contain" />
           <h1 className="web_name text-[3rem]">Tiên Đạo</h1>
         </div>
-        <nav className="flex mb-4 p-5 bg-gray-200 rounded-[3rem]">
+        <nav className="flex mb-4 p-[1rem] bg-gray-200 rounded-[3rem]">
           <button
             className={`px-4 py-2 ${activeTab === "login" ? "bg-[color:var(--gold)] text-white rounded-3xl mr-[-1rem] login_btn_active" : "rounded-3xl flex"} flex items-center justify-center w-[10rem] text-[1.6rem]`}
             onClick={() => setActiveTab("login")}

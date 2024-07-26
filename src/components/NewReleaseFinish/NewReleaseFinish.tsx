@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFeatherPointed } from "@fortawesome/free-solid-svg-icons";
+import { faCaretRight, faFeatherPointed } from "@fortawesome/free-solid-svg-icons";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -129,7 +129,13 @@ function NewReleaseFinish() {
         </div>
       </div>
       <div className="Homepage__new_finish">
-        <h1 className="Homepage__new_finish--title">Mới hoàn thành</h1>
+        <div className="flex justify-between w-full items-center px-5">
+          <h1 className="Homepage__new_finish--title">Mới hoàn thành</h1>
+          <button className="flex gap-2.5 items-center px-5 text-[1.6rem] hover:text-[color:var(--gold)]">
+            Xem thêm
+            <FontAwesomeIcon icon={faCaretRight} />
+          </button>
+        </div>
         <div className="line"></div>
         <div className="Homepage__new_finish--comic_list">
           <div className="Homepage__new_finish--comic">

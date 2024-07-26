@@ -15,14 +15,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
     <script type="module" src="/src/main.tsx"></script>
     <script>
-      // Đảm bảo rằng jQuery và jQuery Ripples đã được tải
       window.addEventListener('load', function() {
         // Sử dụng MutationObserver để theo dõi thay đổi của DOM
         const observer = new MutationObserver(() => {
           // Áp dụng hiệu ứng ripples cho các phần tử có class 'login_register'
           $(".login_register").ripples({
-            resolution: 200,
-            perturbance: 0.02,
+            resolution: 256,
+            perturbance: 0.03,
+          });
+
+          // Áp dụng hiệu ứng ripples cho các phần tử img trong SwiperSlide
+          $(".slide_top__img").ripples({
+            resolution: 256,
+            perturbance: 0.03,
           });
         });
 
@@ -31,8 +36,12 @@
 
         // Áp dụng hiệu ứng ripples ngay lập tức
         $(".login_register").ripples({
-          resolution: 200,
-          perturbance: 0.02,
+          resolution: 256,
+          perturbance: 0.03,
+        });
+        $(".slide_top__img").ripples({
+          resolution: 256,
+          perturbance: 0.03,
         });
       });
     </script>

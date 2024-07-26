@@ -5,7 +5,7 @@ function Footer() {
     <div className='Footer__wrapper'>
       <div className="Footer">
           <div className="Footer__web_name">
-            <img src="/assets/Logo.png" alt="Logo" className="Footer__logo" />
+            <img src="https://res.cloudinary.com/djkgwo9kc/image/upload/v1721899786/azkbpvnmztc7ziuoog60.png" alt="Logo" className="Footer__logo" />
             <h1 className="Footer__web_name">Tiên Đạo</h1>
           </div>
           <span className="Footer__web_introduction">Với Tiên đạo, mỗi trang truyện là một hành trình phiêu lưu đầy mê hoặc. Hãy để trí tưởng tượng của bạn bay bổng và khám phá những câu chuyện kỳ diệu, nơi các nhân vật sống động và thế giới kỳ ảo hiện ra trước mắt bạn.</span>

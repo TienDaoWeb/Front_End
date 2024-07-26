@@ -12,7 +12,10 @@
 }
 
 .login_register {
-  height: 80rem;
-  background: url(/assets/images/background_image.jpg) no-repeat center;
-  background-size: contain;
+  height: 84rem;
+  background: url(https://res.cloudinary.com/djkgwo9kc/image/upload/v1721898467/v16kkqkrioxw3ukewooo.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

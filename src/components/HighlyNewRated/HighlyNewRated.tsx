@@ -1,11 +1,17 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFeatherPointed } from "@fortawesome/free-solid-svg-icons";
+import { faCaretRight, faFeatherPointed } from "@fortawesome/free-solid-svg-icons";
 
 function HighlyNewRated() {
   return (
     <div className="Homepage__highly_rated_new_rated">
       <div className="Homepage__highly_rated">
-        <h1 className="Homepage__highly_rated--title">Danh sách đề cử</h1>
+        <div className="flex justify-between w-full items-center px-5">
+          <h1 className="Homepage__highly_rated--title">Danh sách đề cử</h1>
+          <button className="flex gap-2.5 items-center px-5 text-[1.6rem] hover:text-[color:var(--gold)]">
+            Xem thêm
+            <FontAwesomeIcon icon={faCaretRight} />
+          </button>
+        </div>
         <div className="line"></div>
         <div className="Homepage__highly_rated--comic_list">
           <div className="Homepage__highly_rated--comic">

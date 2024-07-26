@@ -15,10 +15,10 @@
   font-family: "UTM ThuPhap Thien An", serif;
 }
 .Header__logo {
-  @apply bg-[url('/assets/Logo.png')] bg-no-repeat bg-contain bg-[center_center] w-[50px] h-[50px];
+  @apply bg-[url(https://res.cloudinary.com/djkgwo9kc/image/upload/v1721899786/azkbpvnmztc7ziuoog60.png)] bg-no-repeat bg-contain bg-[center_center] w-[50px] h-[50px];
 }
 .Header__name:hover .Header__logo {
-  @apply bg-[url('/assets/Logo\_gold.png')] bg-contain bg-[center_center] w-[50px] h-[50px];
+  @apply bg-[url(https://res.cloudinary.com/djkgwo9kc/image/upload/v1721899853/xedneztwhrv9bhol4bbh.png)] bg-contain bg-[center_center] w-[50px] h-[50px];
 }
 .Header__Type {
   @apply flex gap-[10px] items-center font-[600] text-[1.6rem] w-fit;
@@ -31,10 +31,10 @@
 
 }
 .Header__search {
-  @apply flex relative h-[40px];
+  @apply flex relative h-[40px] w-[30rem];
 }
 .Header__search--input {
-  @apply flex-1 border-[color:var(--black)] text-[1.6rem] p-2.5 rounded-[10px] border-[solid] border-none;
+  @apply flex-1 border-[color:var(--black)] text-[1.6rem] py-2.5 px-5 rounded-[10px] border-[solid] border-none;
 }
 .Header__search--icon {
   @apply absolute -translate-y-2/4 right-2.5 top-2/4;
