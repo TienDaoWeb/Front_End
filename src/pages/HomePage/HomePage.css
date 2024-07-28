@@ -14,10 +14,10 @@
   @apply w-full relative;
 }
 .slide_top__img {
-  @apply w-screen h-[400px] object-cover object-[center_center];
+  @apply w-screen object-cover object-[center_center];
 }
 .overlay {
-  @apply absolute z-10 w-full h-5/6 left-0 bottom-0;
+  @apply absolute z-10 w-full h-[30%] left-0 bottom-0;
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0),
@@ -58,15 +58,19 @@
 }
 
 .Homepage__nomination--comic_list, .Homepage__highly_rated--comic_list {
-  @apply flex flex-wrap gap-[20px] pt-[20px];
+  @apply flex flex-wrap gap-[20px] pt-[20px] justify-between px-8 w-full;
 }
+
+/* .Homepage__highly_rated--comic_list {
+  @apply flex flex-wrap gap-[20px] pt-[20px];
+} */
 
 /* .Homepage__nomination--comic{
   @apply flex gap-[20px];
 } */
 
 .Homepage__nomination--comic, .Homepage__highly_rated--comic {
-  @apply flex gap-[20px] rounded-[10px] bg-white px-[20px] py-[20px] cursor-pointer;
+  @apply flex gap-[20px] rounded-[10px] bg-white px-[20px] py-[20px] cursor-pointer w-[48%];
   filter: drop-shadow(0 0 10px var(--gray));
 }
 
@@ -179,17 +183,17 @@
 
 .New_update__comic--translator,
 .New_update__comic--updating_time {
-  @apply w-[100px] text-[color:var(--gray)] text-[1.2rem];
+  @apply w-[100px] text-[color:var(--gray)] text-[1.2rem] text-end;
 }
 
 .Homepage__rank {
-  @apply flex justify-between w-full;
+  @apply flex justify-between w-full px-[5rem];
 }
 
 .Homepage__rank--reading_week,
 .Homepage__rank--trending_week,
 .Homepage__rank--nominating_week {
-  @apply flex w-[350px] flex-col text-center gap-[20px] bg-[color:var(--white)] p-5 rounded-[10px] border-[none];
+  @apply flex w-[31%] flex-col text-center gap-[20px] bg-[color:var(--white)] p-5 rounded-[10px] border-[none];
   filter: drop-shadow(0 0 10px var(--gray));
 }
 
@@ -402,11 +406,11 @@
 }
 
 .Homepage__new_finish--comic_list {
-  @apply flex flex-wrap gap-[20px] pt-[20px];
+  @apply flex flex-wrap gap-[20px] pt-[20px] justify-between;
 }
 
 .Homepage__new_finish--comic {
-  @apply flex gap-[20px] rounded-[10px] bg-white px-[20px] py-[20px] cursor-pointer;
+  @apply flex w-[48%] gap-[20px] rounded-[10px] bg-white px-[20px] py-[20px] cursor-pointer;
   filter: drop-shadow(0 0 10px var(--gray));
 }
 

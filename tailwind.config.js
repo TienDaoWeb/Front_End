@@ -14,7 +14,7 @@ module.exports = withMT({
     "./public/material-tailwind-html-v2.js",
   ],
   theme: {
-    extend: {
+    extends: {
       colors: {
         primary: "#020617",
       },
@@ -23,6 +23,9 @@ module.exports = withMT({
       },
       fontFamily: {
         'KDHidayatullah': ['KD Hidayatullah']
+      },
+      screen:{
+        xs: { minWidth: "320px" },
       }
     },
   },

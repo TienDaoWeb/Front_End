@@ -14,14 +14,14 @@ const LoginRegister = () => {
   // });
 
   return (
-    <div className="flex w-screen h-[80rem] inset-0 z-50 flex items-center justify-center relative login_register">
+    <div className="flex w-screen h-[80rem] min-w-[1400px]:h-[86rem] inset-0 z-50 flex items-center justify-center login_register">
       {/* <img
         id="background-image"
         src="/assets/images/background_image.jpg"
         alt="background image"
         className="h-[80rem] object-cover absolute"
       /> */}
-      <div className="bg-[color:var(--white-trans)] py-10 px-[5rem] rounded-3xl shadow-md flex flex-col items-center justify-center gap-5 m-auto relative">
+      <div className="bg-[color:var(--white-trans)] py-10 px-[5rem] rounded-3xl shadow-md flex flex-col items-center justify-center gap-5 m-auto">
         <div className="flex items-center gap-2.5">
           <img src="https://res.cloudinary.com/djkgwo9kc/image/upload/v1721899786/azkbpvnmztc7ziuoog60.png" alt="Logo" className="h-[8rem] object-contain" />
           <h1 className="web_name text-[3rem]">Tiên Đạo</h1>

@@ -72,7 +72,7 @@ function HomePage() {
           {slides_top.map((slide_top, index) => (
             <SwiperSlide key={index} className='slide_swipper'>
               <div
-                className="slide_top__img"
+                className="slide_top__img max-[700px]:h-[200px]"
                 style={{ 
                   backgroundImage: `url(${slide_top.src})`,
                   backgroundSize: 'cover',

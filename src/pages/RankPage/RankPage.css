@@ -13,17 +13,6 @@
 .mySwiper-top {
   @apply w-full relative;
 }
-.slide_top__img {
-  @apply w-screen h-[400px] object-cover object-[center_center];
-}
-.overlay {
-  @apply absolute z-10 w-full h-3/6 left-0 bottom-0;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 1)
-  );
-}
 
 .Trending_page__container {
   @apply flex flex-col justify-center gap-[40px] mt-[300px] z-10;
