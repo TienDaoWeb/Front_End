@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function NewUpdate() {
   return (
-    <div className="Homepage__new_update px-5">
+    <div className="Homepage__new_update px-5 xs:p-0">
       <div className="flex justify-between w-full items-center px-5">
         <h1 className="Homepage__new_update--title">Mới cập nhật</h1>
         <button className="flex gap-2.5 items-center xs:px-1 sm:px-5 text-[1.6rem] hover:text-[color:var(--gold)]">
@@ -17,9 +17,9 @@ function NewUpdate() {
           <span className="New_update__comic--type xs:hidden">Khoa huyễn</span>
           <h2 className="New_update__comic--title xs:font-bold">Linh cảnh hành giả</h2>
           <div className="flex w-full items-center justify-between xs:text-[1.4rem] text-[1.6rem] text-[color:var(--gray)]">
-            <span className="New_update__comic--author w-[150px] xs:flex xs:gap-2 xs:items-center">
+            <span className="New_update__comic--author w-[170px] xs:flex xs:gap-2 xs:items-center">
               <FontAwesomeIcon icon={faCircleUser} className="sm:hidden"/>
-              Mại Báo Tiểu Lang Quân
+              <span className="author_name">Mại Báo Tiểu Lang Quân </span>
               </span>
             <span className="New_update__comic--chapter  sm:w-[300px]">Chương 101<span className="xs:hidden">: Trong nháy mắt giết địch</span></span>
           </div>
@@ -35,9 +35,9 @@ function NewUpdate() {
           <span className="New_update__comic--type xs:hidden">Khoa huyễn</span>
           <h2 className="New_update__comic--title xs:font-bold">Linh cảnh hành giả</h2>
           <div className="flex w-full items-center justify-between xs:text-[1.4rem] text-[1.6rem] text-[color:var(--gray)]">
-            <span className="New_update__comic--author w-[150px] xs:flex xs:gap-2 xs:items-center">
+            <span className="New_update__comic--author w-[170px] xs:flex xs:gap-2 xs:items-center">
               <FontAwesomeIcon icon={faCircleUser} className="sm:hidden"/>
-              Mại Báo Tiểu Lang Quân
+              <span className="author_name">Mại Báo Tiểu Lang Quân </span>
               </span>
             <span className="New_update__comic--chapter  sm:w-[300px]">Chương 101<span className="xs:hidden">: Trong nháy mắt giết địch</span></span>
           </div>
@@ -53,9 +53,9 @@ function NewUpdate() {
           <span className="New_update__comic--type xs:hidden">Khoa huyễn</span>
           <h2 className="New_update__comic--title xs:font-bold">Linh cảnh hành giả</h2>
           <div className="flex w-full items-center justify-between xs:text-[1.4rem] text-[1.6rem] text-[color:var(--gray)]">
-            <span className="New_update__comic--author w-[150px] xs:flex xs:gap-2 xs:items-center">
+            <span className="New_update__comic--author w-[170px] xs:flex xs:gap-2 xs:items-center">
               <FontAwesomeIcon icon={faCircleUser} className="sm:hidden"/>
-              Mại Báo Tiểu Lang Quân
+              <span className="author_name">Mại Báo Tiểu Lang Quân </span>
               </span>
             <span className="New_update__comic--chapter  sm:w-[300px]">Chương 101<span className="xs:hidden">: Trong nháy mắt giết địch</span></span>
           </div>
@@ -71,9 +71,9 @@ function NewUpdate() {
           <span className="New_update__comic--type xs:hidden">Khoa huyễn</span>
           <h2 className="New_update__comic--title xs:font-bold">Linh cảnh hành giả</h2>
           <div className="flex w-full items-center justify-between xs:text-[1.4rem] text-[1.6rem] text-[color:var(--gray)]">
-            <span className="New_update__comic--author w-[150px] xs:flex xs:gap-2 xs:items-center">
+            <span className="New_update__comic--author w-[170px] xs:flex xs:gap-2 xs:items-center">
               <FontAwesomeIcon icon={faCircleUser} className="sm:hidden"/>
-              Mại Báo Tiểu Lang Quân
+              <span className="author_name">Mại Báo Tiểu Lang Quân </span>
               </span>
             <span className="New_update__comic--chapter  sm:w-[300px]">Chương 101<span className="xs:hidden">: Trong nháy mắt giết địch</span></span>
           </div>
@@ -89,9 +89,9 @@ function NewUpdate() {
           <span className="New_update__comic--type xs:hidden">Khoa huyễn</span>
           <h2 className="New_update__comic--title xs:font-bold">Linh cảnh hành giả</h2>
           <div className="flex w-full items-center justify-between xs:text-[1.4rem] text-[1.6rem] text-[color:var(--gray)]">
-            <span className="New_update__comic--author w-[150px] xs:flex xs:gap-2 xs:items-center">
+            <span className="New_update__comic--author w-[170px] xs:flex xs:gap-2 xs:items-center">
               <FontAwesomeIcon icon={faCircleUser} className="sm:hidden"/>
-              Mại Báo Tiểu Lang Quân
+              <span className="author_name">Mại Báo Tiểu Lang Quân </span>
               </span>
             <span className="New_update__comic--chapter  sm:w-[300px]">Chương 101<span className="xs:hidden">: Trong nháy mắt giết địch</span></span>
           </div>
@@ -107,9 +107,9 @@ function NewUpdate() {
           <span className="New_update__comic--type xs:hidden">Khoa huyễn</span>
           <h2 className="New_update__comic--title xs:font-bold">Linh cảnh hành giả</h2>
           <div className="flex w-full items-center justify-between xs:text-[1.4rem] text-[1.6rem] text-[color:var(--gray)]">
-            <span className="New_update__comic--author w-[150px] xs:flex xs:gap-2 xs:items-center">
+            <span className="New_update__comic--author w-[170px] xs:flex xs:gap-2 xs:items-center">
               <FontAwesomeIcon icon={faCircleUser} className="sm:hidden"/>
-              Mại Báo Tiểu Lang Quân
+              <span className="author_name">Mại Báo Tiểu Lang Quân </span>
               </span>
             <span className="New_update__comic--chapter  sm:w-[300px]">Chương 101<span className="xs:hidden">: Trong nháy mắt giết địch</span></span>
           </div>

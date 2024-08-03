@@ -98,7 +98,7 @@
   @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-[100%] max-h-[2em] leading-[1.8em];
 }
 
-.Homepage__nomination--comic__author, .Highly_rated__comic--author {
+ .Highly_rated__comic--author {
   @apply flex gap-[5px] text-2xl leading-5 items-center;
 }
 
@@ -171,8 +171,9 @@
   @apply w-[200px] text-[1.6rem] block text-ellipsis overflow-hidden max-w-[100%] max-h-[2em] leading-[1.8em] text-start cursor-pointer;
 }
 
-.New_update__comic--author{
-  @apply w-[150px] text-[1.6rem] block text-ellipsis overflow-hidden max-w-[150px] max-h-[2em] leading-[1.8em] text-start cursor-pointer;
+/* .New_update__comic--author,  */
+.author_name{
+  @apply w-[150px] text-[1.6rem] block text-ellipsis overflow-hidden max-w-[150px] max-h-[100%] leading-[1.8em] text-start cursor-pointer;
 }
 
 .New_update__comic--chapter {
@@ -438,8 +439,8 @@
   @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-[240px] max-h-[3.6em] leading-[1.8em];
 }
 
-.Homepage__new_finish--comic__author {
-  @apply flex gap-[5px] text-2xl leading-5 items-center;
+.Homepage__nomination--comic__author, .Homepage__new_finish--comic__author {
+  @apply block text-ellipsis overflow-hidden max-w-[100%] max-h-[2.4rem] leading-[1.8em] text-start cursor-pointer;
 }
 
 .Homepage__new_finish--comic__type {

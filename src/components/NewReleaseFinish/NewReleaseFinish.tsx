@@ -128,7 +128,7 @@ function NewReleaseFinish() {
           </div>
         </div>
       </div>
-      <div className="Homepage__new_finish  xs:w-full xs:border-none">
+      <div className="Homepage__new_finish xs:w-full xs:border-none xs:p-0">
         <div className="flex justify-between w-full items-center px-5">
           <h1 className="Homepage__new_finish--title">Mới hoàn thành</h1>
           <button className="flex gap-2.5 items-center xs:px-1 sm:px-5 text-[1.6rem] hover:text-[color:var(--gold)]">
@@ -146,7 +146,7 @@ function NewReleaseFinish() {
                 <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
               </div>
               <span className="Homepage__new_finish--comic__intro xs:w-full"> Tuyên cổ thông kim, nghe đồn thế có Linh cảnh.Liên quan tới Linh cảnh thuyết pháp, các triều đại danh nhân nhã sĩ chúng thuyết phân đàn, trong thơ ghi chép:"Từ Tề đến Đường, tư sơn thâm hoang, Linh cảnh tịch liêu, hiếm người du lịch.""Linh cảnh không thể trạng, quỷ công lượng khó cầu."Thân Thành đại học năm nhất tân sinh Trương Nguyên Thanh, tại dưới một lần cơ duyên xảo hợp, đạt được một tấm hội sở thẻ VIP Chí Tôn, a không, là thẻ thông hành Linh cảnh. </span>
-              <div className="Homepage__new_finish--comic__author">
+              <div className="Homepage__new_finish--comic__author xs:flex xs:gap-2 xs:items-center">
                 <FontAwesomeIcon icon={faFeatherPointed} />
                 <span className="author_name">Mại Báo Tiểu Lang Quân </span>
                 </div>
@@ -160,7 +160,7 @@ function NewReleaseFinish() {
                 <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
               </div>
               <span className="Homepage__new_finish--comic__intro  xs:w-full"> Tuyên cổ thông kim, nghe đồn thế có Linh cảnh.Liên quan tới Linh cảnh thuyết pháp, các triều đại danh nhân nhã sĩ chúng thuyết phân đàn, trong thơ ghi chép:"Từ Tề đến Đường, tư sơn thâm hoang, Linh cảnh tịch liêu, hiếm người du lịch.""Linh cảnh không thể trạng, quỷ công lượng khó cầu."Thân Thành đại học năm nhất tân sinh Trương Nguyên Thanh, tại dưới một lần cơ duyên xảo hợp, đạt được một tấm hội sở thẻ VIP Chí Tôn, a không, là thẻ thông hành Linh cảnh. </span>
-              <div className="Homepage__new_finish--comic__author">
+              <div className="Homepage__new_finish--comic__author xs:flex xs:gap-2 xs:items-center">
                 <FontAwesomeIcon icon={faFeatherPointed} />
                 <span className="author_name">Mại Báo Tiểu Lang Quân </span>
                 </div>
@@ -174,7 +174,7 @@ function NewReleaseFinish() {
                 <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
               </div>
               <span className="Homepage__new_finish--comic__intro  xs:w-full"> Tuyên cổ thông kim, nghe đồn thế có Linh cảnh.Liên quan tới Linh cảnh thuyết pháp, các triều đại danh nhân nhã sĩ chúng thuyết phân đàn, trong thơ ghi chép:"Từ Tề đến Đường, tư sơn thâm hoang, Linh cảnh tịch liêu, hiếm người du lịch.""Linh cảnh không thể trạng, quỷ công lượng khó cầu."Thân Thành đại học năm nhất tân sinh Trương Nguyên Thanh, tại dưới một lần cơ duyên xảo hợp, đạt được một tấm hội sở thẻ VIP Chí Tôn, a không, là thẻ thông hành Linh cảnh. </span>
-              <div className="Homepage__new_finish--comic__author">
+              <div className="Homepage__new_finish--comic__author xs:flex xs:gap-2 xs:items-center">
                 <FontAwesomeIcon icon={faFeatherPointed} />
                 <span className="author_name">Mại Báo Tiểu Lang Quân </span>
                 </div>
@@ -188,7 +188,7 @@ function NewReleaseFinish() {
                 <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
               </div>
               <span className="Homepage__new_finish--comic__intro  xs:w-full"> Tuyên cổ thông kim, nghe đồn thế có Linh cảnh.Liên quan tới Linh cảnh thuyết pháp, các triều đại danh nhân nhã sĩ chúng thuyết phân đàn, trong thơ ghi chép:"Từ Tề đến Đường, tư sơn thâm hoang, Linh cảnh tịch liêu, hiếm người du lịch.""Linh cảnh không thể trạng, quỷ công lượng khó cầu."Thân Thành đại học năm nhất tân sinh Trương Nguyên Thanh, tại dưới một lần cơ duyên xảo hợp, đạt được một tấm hội sở thẻ VIP Chí Tôn, a không, là thẻ thông hành Linh cảnh. </span>
-              <div className="Homepage__new_finish--comic__author">
+              <div className="Homepage__new_finish--comic__author xs:flex xs:gap-2 xs:items-center">
                 <FontAwesomeIcon icon={faFeatherPointed} />
                 <span className="author_name">Mại Báo Tiểu Lang Quân </span>
                 </div>
@@ -202,7 +202,7 @@ function NewReleaseFinish() {
                 <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
               </div>
               <span className="Homepage__new_finish--comic__intro  xs:w-full"> Tuyên cổ thông kim, nghe đồn thế có Linh cảnh.Liên quan tới Linh cảnh thuyết pháp, các triều đại danh nhân nhã sĩ chúng thuyết phân đàn, trong thơ ghi chép:"Từ Tề đến Đường, tư sơn thâm hoang, Linh cảnh tịch liêu, hiếm người du lịch.""Linh cảnh không thể trạng, quỷ công lượng khó cầu."Thân Thành đại học năm nhất tân sinh Trương Nguyên Thanh, tại dưới một lần cơ duyên xảo hợp, đạt được một tấm hội sở thẻ VIP Chí Tôn, a không, là thẻ thông hành Linh cảnh. </span>
-              <div className="Homepage__new_finish--comic__author">
+              <div className="Homepage__new_finish--comic__author xs:flex xs:gap-2 xs:items-center">
                 <FontAwesomeIcon icon={faFeatherPointed} />
                 <span className="author_name">Mại Báo Tiểu Lang Quân </span>
                 </div>
@@ -216,7 +216,7 @@ function NewReleaseFinish() {
                 <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
               </div>
               <span className="Homepage__new_finish--comic__intro  xs:w-full"> Tuyên cổ thông kim, nghe đồn thế có Linh cảnh.Liên quan tới Linh cảnh thuyết pháp, các triều đại danh nhân nhã sĩ chúng thuyết phân đàn, trong thơ ghi chép:"Từ Tề đến Đường, tư sơn thâm hoang, Linh cảnh tịch liêu, hiếm người du lịch.""Linh cảnh không thể trạng, quỷ công lượng khó cầu."Thân Thành đại học năm nhất tân sinh Trương Nguyên Thanh, tại dưới một lần cơ duyên xảo hợp, đạt được một tấm hội sở thẻ VIP Chí Tôn, a không, là thẻ thông hành Linh cảnh. </span>
-              <div className="Homepage__new_finish--comic__author">
+              <div className="Homepage__new_finish--comic__author xs:flex xs:gap-2 xs:items-center">
                 <FontAwesomeIcon icon={faFeatherPointed} />
                 <span className="author_name">Mại Báo Tiểu Lang Quân </span>
                 </div>
