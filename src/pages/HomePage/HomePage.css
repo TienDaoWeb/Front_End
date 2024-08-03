@@ -176,7 +176,7 @@
 }
 
 .author_name{
-  @apply w-[150px] block text-ellipsis overflow-hidden max-w-[150px] max-h-[100%] leading-[1.8em] text-start cursor-pointer;
+  @apply w-[150px] block text-ellipsis overflow-hidden max-w-[150px] max-h-[2.4rem] leading-[1.8em] text-start cursor-pointer;
 }
 
 .New_update__comic--chapter {
