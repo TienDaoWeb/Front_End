@@ -4,17 +4,17 @@ import { faCaretRight, faFeatherPointed } from "@fortawesome/free-solid-svg-icon
 function HighlyNewRated() {
   return (
     <div className="Homepage__highly_rated_new_rated">
-      <div className="Homepage__highly_rated">
+      <div className="Homepage__highly_rated xs:hidden">
         <div className="flex justify-between w-full items-center px-5">
           <h1 className="Homepage__highly_rated--title">Danh sách đề cử</h1>
-          <button className="flex gap-2.5 items-center px-5 text-[1.6rem] hover:text-[color:var(--gold)]">
-            Xem thêm
+          <button className="flex gap-2.5 items-center xs:px-1 sm:px-5 text-[1.6rem] hover:text-[color:var(--gold)]">
+            <span className="xs:hidden">Xem thêm</span>
             <FontAwesomeIcon icon={faCaretRight} />
           </button>
         </div>
         <div className="line"></div>
-        <div className="Homepage__highly_rated--comic_list">
-          <div className="Homepage__highly_rated--comic">
+        <div className="Homepage__highly_rated--comic_list xs:p-0">
+          <div className="Homepage__highly_rated--comic  xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
             <div className="Highly_rated__comic--info">
               <div className="Comic__title_type">
@@ -31,7 +31,7 @@ function HighlyNewRated() {
                 Mại Báo Tiểu Lang Quân </div>
             </div>
           </div>
-          <div className="Homepage__highly_rated--comic">
+          <div className="Homepage__highly_rated--comic  xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
             <div className="Highly_rated__comic--info">
               <div className="Comic__title_type">
@@ -48,7 +48,7 @@ function HighlyNewRated() {
                 Mại Báo Tiểu Lang Quân </div>
             </div>
           </div>
-          <div className="Homepage__highly_rated--comic">
+          <div className="Homepage__highly_rated--comic  xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
             <div className="Highly_rated__comic--info">
               <div className="Comic__title_type">
@@ -65,7 +65,7 @@ function HighlyNewRated() {
                 Mại Báo Tiểu Lang Quân </div>
             </div>
           </div>
-          <div className="Homepage__highly_rated--comic">
+          <div className="Homepage__highly_rated--comic  xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
             <div className="Highly_rated__comic--info">
               <div className="Comic__title_type">
@@ -82,7 +82,7 @@ function HighlyNewRated() {
                 Mại Báo Tiểu Lang Quân </div>
             </div>
           </div>
-          <div className="Homepage__highly_rated--comic">
+          <div className="Homepage__highly_rated--comic  xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
             <div className="Highly_rated__comic--info">
               <div className="Comic__title_type">
@@ -99,7 +99,7 @@ function HighlyNewRated() {
                 Mại Báo Tiểu Lang Quân </div>
             </div>
           </div>
-          <div className="Homepage__highly_rated--comic">
+          <div className="Homepage__highly_rated--comic  xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Highly_rated__comic--img" />
             <div className="Highly_rated__comic--info">
               <div className="Comic__title_type">
@@ -118,7 +118,7 @@ function HighlyNewRated() {
           </div>
         </div>
       </div>
-      <div className="Homepage__new_rated">
+      <div className="Homepage__new_rated xs:w-full">
         <h1 className="Homepage__new_rated--title">Đánh giá mới nhất</h1>
         <div className="line"></div>
         <div className="Homepage__highly_rated--review_list">

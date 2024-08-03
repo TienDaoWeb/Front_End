@@ -72,13 +72,12 @@ function HomePage() {
           {slides_top.map((slide_top, index) => (
             <SwiperSlide key={index} className='slide_swipper'>
               <div
-                className="slide_top__img max-[700px]:h-[200px]"
+                className="slide_top__img xs:h-[200px]"
                 style={{ 
                   backgroundImage: `url(${slide_top.src})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'top',
                   width: '100%',
-                  height: '600px',
                   backgroundRepeat: 'no-repeat'
                 }}
               />
@@ -87,8 +86,8 @@ function HomePage() {
         </Swiper>
         <div className="overlay"></div>
       </div>
-      <div className="Homepage">        
-        <div className="Homepage__container">
+      <div className="Homepage xs:px-5">        
+        <div className="Homepage__container xs:mt-[100px]">
           <NominationReading/>
           <NewUpdate/>
           <HomePageRank/>

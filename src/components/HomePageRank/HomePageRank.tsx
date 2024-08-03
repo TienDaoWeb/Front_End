@@ -5,8 +5,8 @@ import { faFeatherPointed } from "@fortawesome/free-solid-svg-icons";
 
 function HomePageRank() {
   return (
-    <div className="Homepage__rank">
-      <div className="Homepage__rank--reading_week">
+    <div className="Homepage__rank xs:flex-col xs:gap-5 xs:px-5">
+      <div className="Homepage__rank--reading_week xs:w-full xs:hidden">
         <h1 className="Reading_week__title pt-5">Đọc nhiều trong tuần</h1>
         <div className="Reading_week__comic_list pb-5">
           <div className="comic__top_1">
@@ -80,7 +80,7 @@ function HomePageRank() {
           </div>
         </div>
       </div>
-      <div className="Homepage__rank--trending_week">
+      <div className="Homepage__rank--trending_week xs:w-full">
         <h1 className="Trending_week__title pt-5">Thịnh hành trong tuần</h1>
         <div className="Trending_week__comic_list pb-5">
           <div className="comic__top_1">
@@ -154,7 +154,7 @@ function HomePageRank() {
           </div>
         </div>
       </div>
-      <div className="Homepage__rank--nominating_week">
+      <div className="Homepage__rank--nominating_week xs:w-full">
         <h1 className="Nominating_week__title pt-5">Đề cử trong tuần</h1>
         <div className="Nominating_week__comic_list pb-5">
           <div className="comic__top_1">

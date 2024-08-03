@@ -2,7 +2,7 @@
   @apply flex w-full h-[70px];
 }
 .Header {
-  @apply w-full h-full flex items-center justify-between text-[1.6rem] bg-[color:var(--background-color-1)] select-none flex-nowrap px-[100px] py-0;
+  @apply w-full h-full flex items-center justify-between text-[1.6rem] bg-[color:var(--background-color-1)] select-none flex-nowrap px-[10%] py-0;
 }
 .Header__left {
   @apply flex items-center gap-5;
@@ -31,10 +31,10 @@
 
 }
 .Header__search {
-  @apply flex relative h-[40px] w-[30rem];
+  @apply flex relative h-[40px] w-[30%];
 }
 .Header__search--input {
-  @apply flex-1 border-[color:var(--black)] text-[1.6rem] py-2.5 px-5 rounded-[10px] border-[solid] border-none;
+  @apply w-full border-[color:var(--black)] text-[1.6rem] py-2.5 px-5 rounded-[10px] border-[solid] border-none;
 }
 .Header__search--icon {
   @apply absolute -translate-y-2/4 right-2.5 top-2/4;
@@ -65,7 +65,7 @@
   display: none !important; 
 }
 
-.Header__dropdown-button > button{
+.Header__dropdown-button > button, .Header__dropdown-button_responsive > button{
   background-color: transparent !important;
   border: none !important;
   color: var(--black) !important;
@@ -93,4 +93,8 @@
 
 .dropdown-item:hover{
   color: var(--gold) !important;
+}
+
+.dropdown-menu{
+  margin-top: 10px !important;
 }

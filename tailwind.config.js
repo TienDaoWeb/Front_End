@@ -1,7 +1,8 @@
-const colors = require("tailwindcss/colors");
 const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = withMT({
+  // prefix: 'tw-',
+  // important: true,
   content: [
     "./packages/material-tailwind-react/src/components/**/*.{js,ts,jsx,tsx}",
     "./packages/material-tailwind-react/src/theme/**/*.{js,ts,jsx,tsx}",
@@ -14,7 +15,7 @@ module.exports = withMT({
     "./public/material-tailwind-html-v2.js",
   ],
   theme: {
-    extends: {
+    extend: {
       colors: {
         primary: "#020617",
       },
@@ -22,10 +23,11 @@ module.exports = withMT({
         'login-bg': "url('/assets/images/background_login.jpg')",
       },
       fontFamily: {
-        'KDHidayatullah': ['KD Hidayatullah']
+        'KDHidayatullah': ['KD Hidayatullah'],
+        'DFVNBridgeType': ['DFVN Bridge Type'],
       },
-      screen:{
-        xs: { minWidth: "320px" },
+      screens:{
+        xs: "300px",
       }
     },
   },

@@ -8,79 +8,79 @@ import validator from 'validator';
 const Login = () => {
   const navigate = useNavigate();
 
-  const  [accountInfo, setAccountInfo] = React.useState({username:"",password:""});
+  const [accountInfo, setAccountInfo] = React.useState({ username: "", password: "" });
   const [errors, setErrors] = React.useState<{ [index: string]: any }>({});
 
 
 
-  const handleChange = (event:any) =>{
-      setErrors([]);
-      let value = event.target.value;
-      let name = event.target.name;
+  const handleChange = (event: any) => {
+    setErrors([]);
+    let value = event.target.value;
+    let name = event.target.name;
 
-      setAccountInfo((prevalue) => {
-          return {
-              ...prevalue,                
-              [name]: value
-          }
-      })
+    setAccountInfo((prevalue) => {
+      return {
+        ...prevalue,
+        [name]: value
+      }
+    })
   }
 
-  const handleSubmit = () =>{
-      const newErrors: {[index: string]:any} = {}
-      setErrors([]);
+  const handleSubmit = () => {
+    const newErrors: { [index: string]: any } = {}
+    setErrors([]);
 
-      if (!validator.isEmail(accountInfo.username)) {
-          newErrors["email"] = "Email không đúng định dạng";
-      }
-
-      if (!accountInfo.password) {
-          newErrors["password"] = "Mật khẩu không được để trống";
-      };
-
-      if (Object.keys(newErrors).length !== 0) {
-          setErrors(newErrors);
-          return;
-      }else{
-          console.log(accountInfo);
-          axios.post(`${VTICKET_API_SERVICE_INFOS}/auth/login`, {
-              email: accountInfo.username,
-              password: accountInfo.password,
-          })
-          .then(function (response) {
-            console.log(response);
-            console.log(response.data.isSuccess);
-              if (response.data.isSuccess === true) {
-                  localStorage.setItem('access', response.data.data.accessToken);
-                  localStorage.setItem('refresh', response.data.data.refreshToken);
-                  localStorage.setItem("id", response.data.data.profile.id);
-                  localStorage.setItem("email", response.data.data.profile.email);
-                  localStorage.setItem("full_name", response.data.data.profile.fullName);
-                  localStorage.setItem("gender", response.data.data.profile.gender);
-                  localStorage.setItem("birthday", response.data.data.profile.birthDay);
-                  localStorage.setItem("avatar_url", response.data.data.profile.avatarUrl);
-                  localStorage.setItem("phone_number", response.data.data.profile.phoneNumber);
-                  // localStorage.setItem("status", response.data.data.profile.status);
-                  localStorage.setItem("role", response.data.data.profile.role);
-                  navigate('/');
-                  // if(response.data.data.profile.role === 'customer'){
-                  //     navigate('/');
-                  // } else if(response.data.data.profile.role === 'business'){
-                  //     navigate('/dashboard-business');
-                  // } else{
-                  //     navigate('/dashboard-admin');
-                  // }
-              } else {
-                  newErrors["login"] = response.data.message;
-                  setErrors(newErrors);
-              }
-          })
-          .catch(function (error) {
-              newErrors["error"] = error.message;
-              setErrors(newErrors);
-          });
-      }
+    if (!validator.isEmail(accountInfo.username)) {
+      newErrors["email"] = "Email không đúng định dạng";
     }
+
+    if (!accountInfo.password) {
+      newErrors["password"] = "Mật khẩu không được để trống";
+    };
+
+    if (Object.keys(newErrors).length !== 0) {
+      setErrors(newErrors);
+      return;
+    } else {
+      console.log(accountInfo);
+      axios.post(`${VTICKET_API_SERVICE_INFOS}/auth/login`, {
+        email: accountInfo.username,
+        password: accountInfo.password,
+      })
+        .then(function (response) {
+          console.log(response);
+          console.log(response.data.isSuccess);
+          if (response.data.isSuccess === true) {
+            localStorage.setItem('access', response.data.data.accessToken);
+            localStorage.setItem('refresh', response.data.data.refreshToken);
+            localStorage.setItem("id", response.data.data.profile.id);
+            localStorage.setItem("email", response.data.data.profile.email);
+            localStorage.setItem("full_name", response.data.data.profile.fullName);
+            localStorage.setItem("gender", response.data.data.profile.gender);
+            localStorage.setItem("birthday", response.data.data.profile.birthDay);
+            localStorage.setItem("avatar_url", response.data.data.profile.avatarUrl);
+            localStorage.setItem("phone_number", response.data.data.profile.phoneNumber);
+            // localStorage.setItem("status", response.data.data.profile.status);
+            localStorage.setItem("role", response.data.data.profile.role);
+            navigate('/');
+            // if(response.data.data.profile.role === 'customer'){
+            //     navigate('/');
+            // } else if(response.data.data.profile.role === 'business'){
+            //     navigate('/dashboard-business');
+            // } else{
+            //     navigate('/dashboard-admin');
+            // }
+          } else {
+            newErrors["login"] = response.data.message;
+            setErrors(newErrors);
+          }
+        })
+        .catch(function (error) {
+          newErrors["error"] = error.message;
+          setErrors(newErrors);
+        });
+    }
+  }
 
   return (<form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }} className='Login__form text-[1.6rem] flex flex-col gap-2.5 px-[3rem]'>
     <label htmlFor="username">Tài khoản</label>
@@ -90,11 +90,11 @@ const Login = () => {
       name="username"
       value={accountInfo.username}
       onChange={handleChange}
-      className='w-[28rem] text-[1.6rem] px-5 py-2.5 border border-solid border-black rounded-xl'
+      // className='w-[28rem] text-[1.6rem] px-5 py-2.5 border border-solid border-black rounded-xl'
       placeholder='Nhập tài khoản'
-      // className={errors.email ? "Login_form__input error-input" : "Login_form__input normal-input"}
+      className={errors.email ? "w-[28rem] text-[1.6rem] px-5 py-2.5 border border-solid border-black rounded-xl border-[color:var(--red)]" : "w-[28rem] text-[1.6rem] px-5 py-2.5 border border-solid border-black rounded-xl"}
     />
-    {errors["email"] && <span className="error">{errors["email"]}</span>}
+    {errors["email"] && <span className="w-full text-[color:var(--red)]">{errors["email"]}</span>}
     <label htmlFor="password">Mật khẩu</label>
     <input
       type="password"
@@ -102,14 +102,13 @@ const Login = () => {
       name="password"
       value={accountInfo.password}
       onChange={handleChange}
-      className='w-[28rem] text-[1.6rem] px-5 py-2.5 border border-solid border-black rounded-xl'
+      className={errors.email ? "w-[28rem] text-[1.6rem] px-5 py-2.5 border border-solid border-black rounded-xl border-[color:var(--red)]" : "w-[28rem] text-[1.6rem] px-5 py-2.5 border border-solid border-black rounded-xl"}
       placeholder='Nhập mật khẩu'
-      // className={errors.password ? "Login_form__input error-input" : "Login_form__input normal-input"}
     />
-    {errors["password"] && <span className="error">{errors["password"]}</span>}
+    {errors["password"] && <span className="w-full text-[color:var(--red)]">{errors["password"]}</span>}
     <Link to={'/reset-password'} className="w-full text-[color:var(--purple)]">Bạn không nhớ mật khẩu?</Link>
-    {errors["login"] && <span className="error">{errors["login"]}</span>}
-    {errors["error"] && <span className="error">{errors["error"]}</span>}
+    {errors["login"] && <span className="w-full text-[color:var(--red)]">{errors["login"]}</span>}
+    {errors["error"] && <span className="w-full text-[color:var(--red)]">{errors["error"]}</span>}
     <button className='flex m-auto justify-center bg-[color:var(--gold)] w-[100px] text-[color:var(--white)] text-[1.6rem] px-0 py-2.5 rounded-[10px] border-[none] mb-5 mt-5' type="submit">Đăng nhập</button>
   </form>
   );
