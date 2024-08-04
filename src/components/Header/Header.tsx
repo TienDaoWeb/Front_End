@@ -14,7 +14,7 @@ function Header() {
           <Link to={'/'}>
             <div className='Header__name flex items-center'>
               <div className="Header__logo"></div>
-              <h1 className="Header__website-name hidden sm:block">Tiên Đạo</h1>
+              <h1 className="Header__website-name">Tiên Đạo</h1>
             </div>
           </Link>
           <Dropdown>

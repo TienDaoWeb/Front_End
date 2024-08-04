@@ -74,6 +74,10 @@
   .Homepage__rank{
    @apply flex-col gap-5 px-5;
   }
+
+  .Header__website-name{
+    display: none;
+  }
   
   /* .img_slide_bottom{
     @apply h-[150px];
@@ -88,7 +92,7 @@
 @media (max-width: 1024px) {
   .row { margin: 0 -8px; }
   .col { padding: 0 8px; }
-  .Header__website-name, .Header__dropdown-button, .Header_rank__link, .Header__action{
+  .Header__dropdown-button, .Header_rank__link, .Header__action{
     display: none;
   }
   .Homepage {
@@ -147,9 +151,9 @@
 
 @media (min-width: 1024px) and (max-width: 1239px) {
   .wide { width: 984px; }
-  .Header{
+  /* .Header{
     @apply px-[5%];
-  }
+  } */
 }
 
 @media (min-width: 1113px) {

@@ -2,7 +2,7 @@
   @apply flex w-full h-[70px];
 }
 .Header {
-  @apply w-full h-full flex items-center justify-between text-[1.6rem] bg-[color:var(--background-color-1)] select-none flex-nowrap px-[10%] py-0;
+  @apply w-full h-full flex items-center justify-between text-[1.6rem] bg-[color:var(--background-color-1)] select-none flex-nowrap px-[5rem] py-0;
 }
 .Header__left {
   @apply flex items-center gap-5;
