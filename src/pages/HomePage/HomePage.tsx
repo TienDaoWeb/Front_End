@@ -55,7 +55,7 @@ function HomePage() {
       <Header />
       <div className="Homepage__slide">
         <Swiper
-          spaceBetween={40}
+          // spaceBetween={40}
           centeredSlides={true}
           autoplay={{
             delay: 5000,
@@ -72,7 +72,7 @@ function HomePage() {
           {slides_top.map((slide_top, index) => (
             <SwiperSlide key={index} className='slide_swipper'>
               <div
-                className="slide_top__img xs:h-[200px]"
+                className="slide_top__img"
                 style={{ 
                   backgroundImage: `url(${slide_top.src})`,
                   backgroundSize: 'cover',
@@ -86,8 +86,8 @@ function HomePage() {
         </Swiper>
         <div className="overlay"></div>
       </div>
-      <div className="Homepage xs:px-5">        
-        <div className="Homepage__container xs:mt-[100px]">
+      <div className="Homepage">        
+        <div className="Homepage__container">
           <NominationReading/>
           <NewUpdate/>
           <HomePageRank/>

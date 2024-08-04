@@ -4,17 +4,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function NominationReading() {
   return (
     <div className="Homepage__nomination_reading xs:gap-[4rem]">
-      <div className="Homepage__nomination xs:w-full xs:border-none">
+      <div className="Homepage__nomination">
         <div className="flex justify-between w-full items-center px-5">
           <h1 className="Homepage__nomination--title">Danh sách đề cử</h1>
           <button className="flex gap-2.5 items-center xs:px-1 sm:px-5 text-[1.6rem] hover:text-[color:var(--gold)]">
-            <span className="xs:hidden">Xem thêm</span>
+            <span className="more_span">Xem thêm</span>
             <FontAwesomeIcon icon={faCaretRight} />
           </button>
         </div>
         <div className="line"></div>
-        <div className="Homepage__nomination--comic_list xs:p-0">
-          <div className="Homepage__nomination--comic xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
+        <div className="Homepage__nomination--comic_list">
+          <div className="Homepage__nomination--comic">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img xs:w-[9rem] xs:p-0" />
             <div className="Homepage__nomination--comic__info">
               <div className="Comic__title_type">
@@ -27,7 +27,7 @@ function NominationReading() {
                 <span className="author_name">Mại Báo Tiểu Lang Quân </span></div>
             </div>
           </div>
-          <div className="Homepage__nomination--comic xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
+          <div className="Homepage__nomination--comic">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img xs:w-[9rem] xs:p-0" />
             <div className="Homepage__nomination--comic__info">
               <div className="Comic__title_type">
@@ -41,7 +41,7 @@ function NominationReading() {
               </div>
             </div>
           </div>
-          <div className="Homepage__nomination--comic xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
+          <div className="Homepage__nomination--comic">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img xs:w-[9rem] xs:p-0" />
             <div className="Homepage__nomination--comic__info">
               <div className="Comic__title_type">
@@ -54,7 +54,7 @@ function NominationReading() {
                 <span className="author_name">Mại Báo Tiểu Lang Quân </span></div>
             </div>
           </div>
-          <div className="Homepage__nomination--comic xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
+          <div className="Homepage__nomination--comic">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img xs:w-[9rem] xs:p-0" />
             <div className="Homepage__nomination--comic__info">
               <div className="Comic__title_type">
@@ -67,7 +67,7 @@ function NominationReading() {
                 <span className="author_name">Mại Báo Tiểu Lang Quân </span></div>
             </div>
           </div>
-          <div className="Homepage__nomination--comic xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
+          <div className="Homepage__nomination--comic">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img xs:w-[9rem] xs:p-0" />
             <div className="Homepage__nomination--comic__info">
               <div className="Comic__title_type">
@@ -80,7 +80,7 @@ function NominationReading() {
                 <span className="author_name">Mại Báo Tiểu Lang Quân </span></div>
             </div>
           </div>
-          <div className="Homepage__nomination--comic xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
+          <div className="Homepage__nomination--comic">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__nomination--comic__img xs:w-[9rem] xs:p-0" />
             <div className="Homepage__nomination--comic__info">
               <div className="Comic__title_type">
@@ -95,7 +95,7 @@ function NominationReading() {
           </div>
         </div>
       </div>
-      <div className="Homepage__reading xs:w-full xs:ml-0">
+      <div className="Homepage__reading">
       <div className="flex justify-between w-full items-center px-5">
         <h1 className="Homepage__reading--title">Truyện đã đọc</h1>
           <button className="xs:flex gap-2.5 sm:hidden items-center xs:px-1 sm:px-5 text-[1.6rem] hover:text-[color:var(--gold)]">

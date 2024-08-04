@@ -86,8 +86,8 @@ function NewReleaseFinish() {
   };
 
   return (
-    <div className="Homepage__new_release_new_finish xs:flex-col xs:gap-[4rem]">
-      <div className='Homepage__new_release xs:w-full'>
+    <div className="Homepage__new_release_new_finish">
+      <div className='Homepage__new_release'>
         <h1 className="Homepage__new_release--title">Mới đăng</h1>
         <div className="line"></div>
         <div className='slide_wrapper'>
@@ -95,6 +95,7 @@ function NewReleaseFinish() {
             effect={'cards'}
             spaceBetween={30}
             centeredSlides={true}
+            loop={true}
             grabCursor={true}
             autoplay={{
               delay: 2500,
@@ -115,8 +116,48 @@ function NewReleaseFinish() {
               </SwiperSlide>
             ))}
           </Swiper>
+          <Swiper
+            spaceBetween={10}
+            loop={true}
+            grabCursor={true}
+            breakpoints={{
+              320: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              640: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+              },
+            }}
+            centeredSlides={true}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={false}
+            modules={[Autoplay]}
+            className="w-full relative lg:hidden"
+          >
+            {slides.map((slide, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex flex-col items-center">
+                  <img src={slide.src} alt={slide.title} className="img_slide_bottom h-[200px] w-full object-cover" />
+                  <p className="text-center mt-2 Slide____title">{slide.title}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
           <div className="Slide__info">
-            <div className="Slide__title_type">
+            <div className="Slide__title_type ">
               <h2 className="Slide____title">{slides[activeSlideIndex].title}</h2>
               <button className="Slide____type">{slides[activeSlideIndex].genre}</button>
             </div>
@@ -128,7 +169,7 @@ function NewReleaseFinish() {
           </div>
         </div>
       </div>
-      <div className="Homepage__new_finish xs:w-full xs:border-none xs:p-0">
+      <div className="Homepage__new_finish">
         <div className="flex justify-between w-full items-center px-5">
           <h1 className="Homepage__new_finish--title">Mới hoàn thành</h1>
           <button className="flex gap-2.5 items-center xs:px-1 sm:px-5 text-[1.6rem] hover:text-[color:var(--gold)]">
@@ -137,39 +178,25 @@ function NewReleaseFinish() {
           </button>
         </div>
         <div className="line"></div>
-        <div className="Homepage__new_finish--comic_list xs:p-0">
-          <div className="Homepage__new_finish--comic xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
+        <div className="Homepage__new_finish--comic_list">
+          <div className="Homepage__new_finish--comic">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img xs:w-[9rem] xs:p-0" />
-            <div className="Homepage__new_finish--comic__info">
-              <div className="Comic__title_type">
+            <div className="Homepage__new_finish--comic__info w-full">
+              <div className="Comic__title_type w-full">
                 <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
                 <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
               </div>
-              <span className="Homepage__new_finish--comic__intro xs:w-full"> Tuyên cổ thông kim, nghe đồn thế có Linh cảnh.Liên quan tới Linh cảnh thuyết pháp, các triều đại danh nhân nhã sĩ chúng thuyết phân đàn, trong thơ ghi chép:"Từ Tề đến Đường, tư sơn thâm hoang, Linh cảnh tịch liêu, hiếm người du lịch.""Linh cảnh không thể trạng, quỷ công lượng khó cầu."Thân Thành đại học năm nhất tân sinh Trương Nguyên Thanh, tại dưới một lần cơ duyên xảo hợp, đạt được một tấm hội sở thẻ VIP Chí Tôn, a không, là thẻ thông hành Linh cảnh. </span>
+              <span className="Homepage__new_finish--comic__intro w-full"> Tuyên cổ thông kim, nghe đồn thế có Linh cảnh.Liên quan tới Linh cảnh thuyết pháp, các triều đại danh nhân nhã sĩ chúng thuyết phân đàn, trong thơ ghi chép:"Từ Tề đến Đường, tư sơn thâm hoang, Linh cảnh tịch liêu, hiếm người du lịch.""Linh cảnh không thể trạng, quỷ công lượng khó cầu."Thân Thành đại học năm nhất tân sinh Trương Nguyên Thanh, tại dưới một lần cơ duyên xảo hợp, đạt được một tấm hội sở thẻ VIP Chí Tôn, a không, là thẻ thông hành Linh cảnh. </span>
               <div className="Homepage__new_finish--comic__author xs:flex xs:gap-2 xs:items-center">
                 <FontAwesomeIcon icon={faFeatherPointed} />
                 <span className="author_name">Mại Báo Tiểu Lang Quân </span>
                 </div>
             </div>
           </div>
-          <div className="Homepage__new_finish--comic xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
+          <div className="Homepage__new_finish--comic">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img xs:w-[9rem] xs:p-0" />
-            <div className="Homepage__new_finish--comic__info">
-              <div className="Comic__title_type">
-                <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
-                <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
-              </div>
-              <span className="Homepage__new_finish--comic__intro  xs:w-full"> Tuyên cổ thông kim, nghe đồn thế có Linh cảnh.Liên quan tới Linh cảnh thuyết pháp, các triều đại danh nhân nhã sĩ chúng thuyết phân đàn, trong thơ ghi chép:"Từ Tề đến Đường, tư sơn thâm hoang, Linh cảnh tịch liêu, hiếm người du lịch.""Linh cảnh không thể trạng, quỷ công lượng khó cầu."Thân Thành đại học năm nhất tân sinh Trương Nguyên Thanh, tại dưới một lần cơ duyên xảo hợp, đạt được một tấm hội sở thẻ VIP Chí Tôn, a không, là thẻ thông hành Linh cảnh. </span>
-              <div className="Homepage__new_finish--comic__author xs:flex xs:gap-2 xs:items-center">
-                <FontAwesomeIcon icon={faFeatherPointed} />
-                <span className="author_name">Mại Báo Tiểu Lang Quân </span>
-                </div>
-            </div>
-          </div>
-          <div className="Homepage__new_finish--comic xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
-            <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img xs:w-[9rem] xs:p-0" />
-            <div className="Homepage__new_finish--comic__info">
-              <div className="Comic__title_type">
+            <div className="Homepage__new_finish--comic__info w-full">
+              <div className="Comic__title_type w-full">
                 <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
                 <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
               </div>
@@ -180,10 +207,10 @@ function NewReleaseFinish() {
                 </div>
             </div>
           </div>
-          <div className="Homepage__new_finish--comic xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
+          <div className="Homepage__new_finish--comic">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img xs:w-[9rem] xs:p-0" />
-            <div className="Homepage__new_finish--comic__info">
-              <div className="Comic__title_type">
+            <div className="Homepage__new_finish--comic__info w-full">
+              <div className="Comic__title_type w-full">
                 <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
                 <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
               </div>
@@ -194,10 +221,10 @@ function NewReleaseFinish() {
                 </div>
             </div>
           </div>
-          <div className="Homepage__new_finish--comic xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
+          <div className="Homepage__new_finish--comic">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img xs:w-[9rem] xs:p-0" />
-            <div className="Homepage__new_finish--comic__info">
-              <div className="Comic__title_type">
+            <div className="Homepage__new_finish--comic__info w-full">
+              <div className="Comic__title_type w-full">
                 <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
                 <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
               </div>
@@ -208,10 +235,24 @@ function NewReleaseFinish() {
                 </div>
             </div>
           </div>
-          <div className="Homepage__new_finish--comic xs:pt-3 xs:px-3 xs:border-none xs:filter-none xs:w-full">
+          <div className="Homepage__new_finish--comic">
             <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img xs:w-[9rem] xs:p-0" />
-            <div className="Homepage__new_finish--comic__info">
-              <div className="Comic__title_type">
+            <div className="Homepage__new_finish--comic__info w-full">
+              <div className="Comic__title_type w-full">
+                <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
+                <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
+              </div>
+              <span className="Homepage__new_finish--comic__intro  xs:w-full"> Tuyên cổ thông kim, nghe đồn thế có Linh cảnh.Liên quan tới Linh cảnh thuyết pháp, các triều đại danh nhân nhã sĩ chúng thuyết phân đàn, trong thơ ghi chép:"Từ Tề đến Đường, tư sơn thâm hoang, Linh cảnh tịch liêu, hiếm người du lịch.""Linh cảnh không thể trạng, quỷ công lượng khó cầu."Thân Thành đại học năm nhất tân sinh Trương Nguyên Thanh, tại dưới một lần cơ duyên xảo hợp, đạt được một tấm hội sở thẻ VIP Chí Tôn, a không, là thẻ thông hành Linh cảnh. </span>
+              <div className="Homepage__new_finish--comic__author xs:flex xs:gap-2 xs:items-center">
+                <FontAwesomeIcon icon={faFeatherPointed} />
+                <span className="author_name">Mại Báo Tiểu Lang Quân </span>
+                </div>
+            </div>
+          </div>
+          <div className="Homepage__new_finish--comic">
+            <img src="/assets/images/linh_canh_hanh_gia.jpg" alt="comic img" className="Homepage__new_finish--comic__img xs:w-[9rem] xs:p-0" />
+            <div className="Homepage__new_finish--comic__info w-full">
+              <div className="Comic__title_type w-full">
                 <h2 className="Homepage__new_finish--comic__title">Linh cảnh hành giả</h2>
                 <button className="Homepage__nomination--comic__type xs:hidden">Khoa huyễn</button>
               </div>

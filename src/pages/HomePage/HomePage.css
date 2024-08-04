@@ -14,7 +14,7 @@
   @apply w-full relative;
 }
 .slide_top__img {
-  @apply w-screen object-cover object-[center_center];
+  @apply w-screen h-[500px] object-cover object-[center_center];
 }
 .overlay {
   @apply absolute z-10 w-full h-[30%] left-0 bottom-0;
@@ -40,7 +40,7 @@
 }
 
 .Homepage__nomination, .Homepage__highly_rated {
-  @apply flex w-[75%] flex-col gap-[20px] items-center border-r-[1px] border-black border-solid;
+  @apply flex w-[68%] flex-col gap-[20px] items-center border-r-[1px] border-black border-solid;
 }
 
 .Homepage__nomination--title,
@@ -91,7 +91,7 @@
 }
 
 .Homepage__nomination--comic__intro, .Highly_rated__comic--intro {
-  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-[240px] max-h-[3.6em] leading-[1.8em];
+  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-full max-h-[3.6em] leading-[1.8em];
 }
 
 /* .author_name{
@@ -113,7 +113,7 @@
 }
 
 .Homepage__reading,.Homepage__new_rated {
-  @apply flex w-[24%] flex-col gap-[20px] items-center ml-5;
+  @apply flex w-[30%] flex-col gap-[20px] items-center;
 }
 
 .Homepage__reading--comic_list, .Homepage__highly_rated--review_list {
@@ -134,7 +134,7 @@
 }
 
 .Reading__comic--title, .Review__user_name, .Review__story_name {
-  @apply text-[1.6rem] w-full font-bold block text-ellipsis overflow-hidden max-w-[150px] max-h-[2em] leading-[1.8em];
+  @apply text-[1.6rem] w-full font-bold block text-ellipsis overflow-hidden max-w-full max-h-[2em] leading-[1.8em];
   text-wrap: nowrap;
 }
 
@@ -164,23 +164,23 @@
 }
 
 .New_update__comic--type {
-  @apply w-[100px] text-[color:var(--gray)];
+  @apply flex mr-5 w-[100px] text-[color:var(--gray)];
 }
 
 .New_update__comic--title {
-  @apply w-[200px] text-[1.6rem] block text-ellipsis overflow-hidden max-w-[100%] max-h-[2em] leading-[1.8em] text-start cursor-pointer;
+  @apply w-[80%] text-[1.6rem] block text-ellipsis overflow-hidden max-w-[80%] max-h-[1.8em] leading-[1.8em] text-start cursor-pointer;
 }
 
 .New_update__comic--author{
-  @apply w-[180px] text-[1.6rem] block text-ellipsis overflow-hidden max-w-[180px] max-h-[2.4rem] leading-[1.8em] text-start cursor-pointer;
+  @apply w-full block text-ellipsis overflow-hidden max-w-full max-h-[1.8em] leading-[1.8em] text-start cursor-pointer;
 }
 
 .author_name{
-  @apply w-[150px] block text-ellipsis overflow-hidden max-w-[150px] max-h-[2.4rem] leading-[1.8em] text-start cursor-pointer;
+  @apply w-full block text-ellipsis overflow-hidden max-w-full max-h-[1.8em] leading-[1.8em] text-start cursor-pointer;
 }
 
 .New_update__comic--chapter {
-  @apply block text-ellipsis overflow-hidden max-w-[100%] max-h-[3.6em] leading-[1.8em] text-start cursor-pointer;
+  @apply min-w-[10rem] block text-ellipsis overflow-hidden max-w-full max-h-[3.6em] leading-[1.8em] cursor-pointer;
   word-wrap: break-word;
 }
 
@@ -195,7 +195,7 @@
 }
 
 .Homepage__rank {
-  @apply flex justify-between w-full px-[5rem];
+  @apply flex justify-between w-full px-[3rem];
 }
 
 .Homepage__rank--reading_week,
@@ -232,11 +232,11 @@
 }
 
 .comic__top_1--info {
-  @apply flex flex-col items-start gap-[5px] w-[150px];
+  @apply flex flex-col items-start gap-[5px] w-full;
 }
 
 .comic__title {
-  @apply text-2xl w-[150px] text-start font-[normal];
+  @apply text-2xl w-full text-start font-[normal];
 }
 
 .comic__top_1--view,
@@ -323,11 +323,11 @@
 }
   
 .Review__content{
-  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-[240px] h-[4em] leading-[1.8em];
+  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-full h-[4em] leading-[1.8em];
 }
 
 .Homepage__new_release{
-  @apply flex flex-col items-center gap-[20px] w-[24%] px-[10px];
+  @apply flex flex-col items-center gap-[20px] w-[30%] px-[10px];
 }
 
 .slide_wrapper{
@@ -342,9 +342,9 @@
   @apply flex items-center justify-center rounded-[20px] border-none text-[2.2rem] font-bold text-[#fff];
 }
 
-.slide__img{
+/* .slide__img{
   @apply object-contain w-[240px];
-}
+} */
 
 /* .swiper-slide:nth-child(1n) {
   background-color: rgb(206, 17, 17);
@@ -394,15 +394,15 @@
 }
 
 .Slide____title{
-  @apply text-2xl font-bold;
+  @apply font-bold text-[1.6rem] block text-ellipsis overflow-hidden max-w-[100%] h-[2.4rem] max-h-[1.8em] leading-[1.8em];
 }
 
 .Slide____type{
-  @apply flex w-[100px] h-[30px] justify-center items-center border-[color:var(--black)] rounded-[15px] border-[solid];
+  @apply flex w-[100px] text-[1.4rem] h-[30px] justify-center items-center border-[color:var(--black)] rounded-[15px] border-[solid];
 }
 
 .Slide____intro{
-  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-[240px] h-[3.6em] max-h-[3.6em] leading-[1.8em];
+  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-full h-[3.6em] max-h-[3.6em] leading-[1.8em];
 }
 
 .Slide____author{
@@ -410,7 +410,7 @@
 }
 
 .Homepage__new_finish{
-  @apply flex w-[75%] flex-col gap-[20px] items-center border-l-[1px] border-black border-solid pl-[40px];
+  @apply flex w-[68%] flex-col gap-[20px] items-center border-l-[1px] border-black border-solid pl-[40px];
 }
 
 .Homepage__new_finish--comic_list {
@@ -439,11 +439,11 @@
 }
 
 .Homepage__new_finish--comic__intro {
-  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-[240px] max-h-[3.6em] leading-[1.8em];
+  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-full max-h-[3.6em] leading-[1.8em];
 }
 
 .Homepage__nomination--comic__author, .Homepage__new_finish--comic__author {
-  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-[100%] max-h-[2.4rem] leading-[1.8em] text-start cursor-pointer;
+  @apply text-[1.6rem] block text-ellipsis overflow-hidden max-w-full max-h-[1.8em] leading-[1.8em] text-start cursor-pointer;
 }
 
 .Homepage__new_finish--comic__type {
