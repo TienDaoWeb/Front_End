@@ -1,0 +1,21 @@
+.web_name{
+  @apply font-normal not-italic;
+  font-family: "UTM ThuPhap Thien An", serif;
+}
+
+.login_btn_active{
+  z-index: 1;
+}
+
+.register_btn_active{
+  z-index: 1;
+}
+
+.login_register {
+  min-height: 100vh;
+  background: url(https://res.cloudinary.com/djkgwo9kc/image/upload/v1721898467/v16kkqkrioxw3ukewooo.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

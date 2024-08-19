@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 import React from 'react';
-import VTICKET_API_SERVICE_INFOS from '~/configs/api_infos';
+import TIENDAO_API_SERVICE_INFOS from '~/configs/api_infos';
 import axios from 'axios';
 import validator from 'validator';
 
@@ -43,7 +43,7 @@ const Login = () => {
       return;
     } else {
       console.log(accountInfo);
-      axios.post(`${VTICKET_API_SERVICE_INFOS}/auth/login`, {
+      axios.post(`${TIENDAO_API_SERVICE_INFOS}/auth/login`, {
         email: accountInfo.username,
         password: accountInfo.password,
       })
@@ -90,9 +90,9 @@ const Login = () => {
       name="username"
       value={accountInfo.username}
       onChange={handleChange}
-      // className='w-[28rem] text-[1.6rem] px-5 py-2.5 border border-solid border-black rounded-xl'
+      // className='sm:w-[28rem] text-[1.6rem] px-5 py-2.5 normal-input'
       placeholder='Nhập tài khoản'
-      className={errors.email ? "w-[28rem] text-[1.6rem] px-5 py-2.5 border border-solid border-black rounded-xl border-[color:var(--red)]" : "w-[28rem] text-[1.6rem] px-5 py-2.5 border border-solid border-black rounded-xl"}
+      className={errors.email ? "login__input sm:w-[28rem] text-[1.6rem] px-5 py-2.5 error-input text-[color:var(--red)]" : "login__input sm:w-[28rem] text-[1.6rem] px-5 py-2.5 normal-input"}
     />
     {errors["email"] && <span className="w-full text-[color:var(--red)]">{errors["email"]}</span>}
     <label htmlFor="password">Mật khẩu</label>
@@ -102,7 +102,7 @@ const Login = () => {
       name="password"
       value={accountInfo.password}
       onChange={handleChange}
-      className={errors.email ? "w-[28rem] text-[1.6rem] px-5 py-2.5 border border-solid border-black rounded-xl border-[color:var(--red)]" : "w-[28rem] text-[1.6rem] px-5 py-2.5 border border-solid border-black rounded-xl"}
+      className={errors.email ? "login__input sm:w-[28rem] text-[1.6rem] px-5 py-2.5 error-input text-[color:var(--red)]" : "login__input sm:w-[28rem] text-[1.6rem] px-5 py-2.5 normal-input"}
       placeholder='Nhập mật khẩu'
     />
     {errors["password"] && <span className="w-full text-[color:var(--red)]">{errors["password"]}</span>}

@@ -2,8 +2,8 @@ import { useState } from "react";
 import './LoginRegister.css';
 // import $ from 'jquery';
 // import 'jquery.ripples';
-import Login from "../Login/Login";
-import Register from "../Register";
+import Login from "../../components/Login/Login";
+import Register from "../../components/Register";
 
 const LoginRegister = () => {
   const [activeTab, setActiveTab] = useState("login");
@@ -21,7 +21,7 @@ const LoginRegister = () => {
         alt="background image"
         className="h-[80rem] object-cover absolute"
       /> */}
-      <div className="bg-[color:var(--white-trans)] py-10 px-[5rem] rounded-3xl shadow-md flex flex-col items-center justify-center gap-5 m-auto">
+      <div className="bg-[color:var(--white-trans)] py-10 px-[2.5rem] rounded-3xl shadow-md flex flex-col items-center justify-center gap-5 m-auto">
         <div className="flex items-center gap-2.5">
           <img src="https://res.cloudinary.com/djkgwo9kc/image/upload/v1721899786/azkbpvnmztc7ziuoog60.png" alt="Logo" className="h-[8rem] object-contain" />
           <h1 className="web_name text-[3rem]">Tiên Đạo</h1>

@@ -276,3 +276,13 @@ svg {
   @apply align-middle;
 }
 
+.normal-input{
+  border-radius: 5px;
+  border: solid 1px var(--black);
+}
+
+.error-input{
+  border-radius: 5px;
+  border: solid 1px var(--red);
+}
+

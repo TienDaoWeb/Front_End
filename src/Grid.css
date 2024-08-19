@@ -86,6 +86,10 @@
   .Homepage__rank--reading_week, .Homepage__rank--trending_week, .Homepage__rank--nominating_week{
     @apply w-full;
   }
+
+  .login__input, .register__input, .otp_form__input{
+    @apply w-[200px];
+  }
 }
 
 

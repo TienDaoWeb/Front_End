@@ -7,7 +7,8 @@ import RedirectInterceptor from "./helpers/axios_provider"
 import StoryDetail from './pages/StoryDetail';
 import RankPage from './pages/RankPage';
 import ChapDetail from './pages/ChapDetail';
-import LoginRegister from './components/LoginRegister';
+import LoginRegister from './pages/LoginRegister';
+import OTP from './pages/OTP';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/story-detail/:storyID" element={<StoryDetail />} />
         <Route path="/story-detail/:storyID/:chapID" element={<ChapDetail />} />
         <Route path="/login-register" element={<LoginRegister />} />
+        <Route path="/otp/:slug" element={<OTP />} />
       </Routes>
     </Router>
   );
